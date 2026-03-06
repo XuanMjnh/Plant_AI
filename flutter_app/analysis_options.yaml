@@ -1,0 +1,7 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Dễ đọc cho người mới
+    prefer_single_quotes: true
+    avoid_print: false

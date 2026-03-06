@@ -1,0 +1,7 @@
+{
+  "inputWidth": 224,
+  "inputHeight": 224,
+  "mean": 0.0,
+  "std": 255.0,
+  "topK": 3
+}

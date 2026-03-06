@@ -1,0 +1,269 @@
+{
+  "corn_Blight": {
+    "title": "Ngô – bệnh cháy lá (Blight)",
+    "symptoms": [
+      "Vết bệnh dài hình thoi hoặc hình 'xì gà', màu xám xanh đến nâu vàng",
+      "Vết bệnh lan dọc theo phiến lá, ranh giới khá rõ",
+      "Khi nặng, nhiều vết liên kết làm lá cháy khô từng mảng"
+    ],
+    "care": [
+      "Tỉa thông thoáng, tránh để ruộng quá rậm",
+      "Thu gom hoặc xử lý tàn dư sau vụ để giảm nguồn bệnh",
+      "Luân canh với cây trồng khác nếu ruộng bị bệnh lặp lại nhiều vụ",
+      "Theo dõi sớm giai đoạn lá giữa và lá trên để xử lý kịp thời"
+    ],
+    "note": "Bệnh thường phát triển mạnh khi thời tiết ẩm và lá ướt kéo dài."
+  },
+  "corn_Common_Rust": {
+    "title": "Ngô – bệnh gỉ sắt thường (Common Rust)",
+    "symptoms": [
+      "Xuất hiện nhiều ổ nổi nhỏ màu nâu đỏ đến màu gỉ sắt trên lá",
+      "Ổ bệnh có thể xuất hiện ở cả hai mặt lá",
+      "Khi nặng, lá vàng dần và giảm khả năng quang hợp"
+    ],
+    "care": [
+      "Theo dõi ruộng thường xuyên, nhất là khi thời tiết mát và ẩm",
+      "Giữ dinh dưỡng cân đối để cây không bị suy yếu",
+      "Ưu tiên giống có mức chống chịu tốt nếu khu vực hay bị bệnh",
+      "Vệ sinh đồng ruộng và loại bỏ lá bị nặng nếu diện tích nhỏ"
+    ],
+    "note": "Bệnh dễ bùng phát trong điều kiện mát ẩm; mức độ nặng phụ thuộc giống và thời tiết."
+  },
+  "corn_Gray_Leaf_Spot": {
+    "title": "Ngô – bệnh đốm lá xám (Gray Leaf Spot)",
+    "symptoms": [
+      "Vết bệnh hình chữ nhật hoặc thuôn dài, bị giới hạn bởi gân lá",
+      "Màu vết bệnh xám nâu, đôi khi có quầng vàng nhạt",
+      "Nhiều vết nhập lại làm lá bị cháy xám diện rộng"
+    ],
+    "care": [
+      "Luân canh và xử lý tàn dư cây bệnh sau thu hoạch",
+      "Không trồng quá dày, tăng thông thoáng tán lá",
+      "Ưu tiên giống có khả năng chống chịu",
+      "Theo dõi bệnh từ các lá thấp vì bệnh thường xuất hiện từ dưới lên"
+    ],
+    "note": "Bệnh phát triển mạnh khi ẩm độ cao và lá ướt lâu."
+  },
+  "corn_Healthy": {
+    "title": "Ngô khoẻ mạnh",
+    "symptoms": [
+      "Lá xanh đều, không có đốm, ổ gỉ hay vết cháy bất thường",
+      "Phiến lá nguyên vẹn, không khô mép, không biến màu",
+      "Cây sinh trưởng đồng đều, thân lá cứng cáp"
+    ],
+    "care": [
+      "Tưới và thoát nước hợp lý, tránh khô hạn hoặc úng",
+      "Bón phân cân đối theo giai đoạn sinh trưởng",
+      "Thường xuyên kiểm tra lá dưới và lá giữa để phát hiện bệnh sớm"
+    ],
+    "note": "Duy trì ruộng thông thoáng và sạch tàn dư giúp giảm nhiều bệnh lá."
+  },
+  "mango_Anthracnose": {
+    "title": "Xoài – bệnh thán thư (Anthracnose)",
+    "symptoms": [
+      "Lá, đọt non và chùm hoa xuất hiện đốm nâu đen",
+      "Đọt non có thể bị khô cháy, hoa bị đen và rụng",
+      "Quả non hoặc quả già có đốm đen, nhăn và dễ thối"
+    ],
+    "care": [
+      "Cắt tỉa cành, lá, hoa hoặc quả bệnh và tiêu huỷ",
+      "Giữ tán cây thông thoáng để giảm ẩm",
+      "Dọn lá rụng và tàn dư dưới gốc",
+      "Theo dõi sát giai đoạn ra hoa, đậu quả non để xử lý sớm"
+    ],
+    "note": "Bệnh phát triển mạnh khi ẩm cao, mưa nhiều và thời tiết nóng ẩm."
+  },
+  "mango_Bacterial Canker": {
+    "title": "Xoài – bệnh loét vi khuẩn (Bacterial Canker)",
+    "symptoms": [
+      "Ban đầu là các vết úng nước nhỏ, không đều trên lá",
+      "Vết bệnh lớn dần thành mảng hoại tử, lá vàng và rụng",
+      "Trên quả có vết sẫm màu, có thể nứt và rỉ dịch nhầy"
+    ],
+    "care": [
+      "Cắt bỏ bộ phận bị bệnh nặng và tiêu huỷ",
+      "Hạn chế làm xây xát cây, quả và cành non",
+      "Tỉa tán để giảm ẩm và giảm lây lan",
+      "Theo dõi kỹ lá non, cành non và quả non sau mưa"
+    ],
+    "note": "Bệnh có thể lây mạnh qua mưa, gió và dụng cụ cắt tỉa không vệ sinh."
+  },
+  "mango_Cutting Weevil": {
+    "title": "Xoài – sâu cắt lá / mọt cắt lá (Cutting Weevil)",
+    "symptoms": [
+      "Lá non bị cắn khuyết mép hoặc bị cắt, cuốn, xoắn",
+      "Đọt non dễ bị héo và khô khi bị hại nặng",
+      "Tán non bị xơ xác, cây giảm sinh trưởng"
+    ],
+    "care": [
+      "Thu gom và tiêu huỷ lá non bị cắt, bị cuốn hoặc rụng bất thường",
+      "Theo dõi chồi non thường xuyên vì sâu hại mạnh trên đọt mới",
+      "Tỉa bỏ phần non bị hại nặng để hạn chế lây lan ổ sâu",
+      "Giữ vườn sạch cỏ và thông thoáng để giảm nơi trú ẩn"
+    ],
+    "note": "Sâu thường gây hại rõ trên đợt lá non mới ra; phát hiện sớm sẽ dễ xử lý hơn."
+  },
+  "mango_Die Back": {
+    "title": "Xoài – bệnh khô cành / chết ngọn (Die Back)",
+    "symptoms": [
+      "Cành non và cành nhỏ khô dần từ ngọn vào trong",
+      "Lá chuyển nâu, mép lá cuốn lên rồi rụng",
+      "Vỏ cành sẫm màu, đôi khi có rỉ nhựa vàng nâu"
+    ],
+    "care": [
+      "Cắt bỏ cành bệnh xuống dưới phần bị hại và tiêu huỷ",
+      "Khử trùng dụng cụ cắt tỉa sau khi dùng",
+      "Tạo tán thông thoáng, tránh để ẩm kéo dài",
+      "Chăm cây cân đối để giảm suy kiệt sau khi cắt tỉa"
+    ],
+    "note": "Nếu để muộn, bệnh có thể lan dần từ cành nhỏ sang cành lớn."
+  },
+  "mango_Gall Midge": {
+    "title": "Xoài – sâu muỗi tạo u sần lá (Gall Midge)",
+    "symptoms": [
+      "Lá xuất hiện các u sần hoặc nốt phồng bất thường",
+      "Lá non dễ biến dạng, quăn hoặc rụng sớm",
+      "Cây non bị hại nặng có thể chậm phát triển"
+    ],
+    "care": [
+      "Ngắt bỏ và tiêu huỷ lá bị u sần nhiều",
+      "Theo dõi đợt lá non vì sâu thường gây hại mạnh ở giai đoạn này",
+      "Giữ vườn thông thoáng và vệ sinh sạch tàn dư",
+      "Kiểm tra thường xuyên mặt lá để phát hiện sớm"
+    ],
+    "note": "Nếu mật độ cao, sâu có thể làm giảm diện tích lá hữu hiệu và làm cây suy yếu."
+  },
+  "mango_Healthy": {
+    "title": "Xoài khoẻ mạnh",
+    "symptoms": [
+      "Lá xanh tự nhiên, không có đốm đen, phấn trắng hay mảng mốc đen",
+      "Đọt non phát triển đều, không xoăn, không khô ngọn",
+      "Lá không có u sần, không bị cắn khuyết hay biến dạng"
+    ],
+    "care": [
+      "Tỉa tán định kỳ để tăng ánh sáng và thông thoáng",
+      "Bón phân cân đối và tưới hợp lý theo giai đoạn",
+      "Theo dõi kỹ vào thời kỳ ra đọt non, ra hoa và đậu quả"
+    ],
+    "note": "Vườn thông thoáng, sạch cỏ và ít sâu chích hút sẽ giảm rõ nguy cơ bệnh trên lá."
+  },
+  "mango_Powdery Mildew": {
+    "title": "Xoài – bệnh phấn trắng (Powdery Mildew)",
+    "symptoms": [
+      "Có lớp phấn trắng xám trên lá, chùm hoa và quả non",
+      "Hoa và quả non bị nâu, khô rồi rụng sớm",
+      "Bộ phận bị bệnh trông như phủ bụi trắng"
+    ],
+    "care": [
+      "Cắt bỏ chùm hoa hoặc bộ phận bị bệnh nặng",
+      "Giữ tán cây thoáng, tránh ẩm kéo dài trong thời kỳ ra hoa",
+      "Theo dõi từ lúc ra đọt non đến giai đoạn hoa nở",
+      "Xử lý sớm ngay khi mới thấy lớp phấn trắng"
+    ],
+    "note": "Bệnh đặc biệt nguy hiểm ở giai đoạn ra hoa và đậu quả non."
+  },
+  "mango_Sooty Mould": {
+    "title": "Xoài – bệnh muội đen (Sooty Mould)",
+    "symptoms": [
+      "Bề mặt lá, cành hoặc quả có lớp mốc đen như bồ hóng",
+      "Lá bị phủ đen, giảm quang hợp",
+      "Thường đi kèm sự xuất hiện của rệp, rầy, rệp sáp hoặc côn trùng tiết mật ngọt"
+    ],
+    "care": [
+      "Ưu tiên kiểm soát côn trùng chích hút tiết mật ngọt",
+      "Tỉa bỏ cành bị nặng và vệ sinh tán cây",
+      "Có thể rửa sạch bớt lớp muội trên cây nhỏ hoặc cành thấp",
+      "Giữ vườn thông thoáng để hạn chế ẩm và mật độ côn trùng"
+    ],
+    "note": "Muội đen thường là hệ quả của mật ngọt do côn trùng tiết ra, nên cần xử lý cả nguyên nhân lẫn lớp nấm bám."
+  },
+  "rice_bacterial_leaf_blight": {
+    "title": "Lúa – bệnh bạc lá vi khuẩn (Bacterial Leaf Blight)",
+    "symptoms": [
+      "Lá úa vàng từ chóp hoặc mép lá rồi khô dần",
+      "Vết bệnh kéo dài theo phiến lá, sau đó lá bạc trắng",
+      "Cây con có thể héo rũ nếu bệnh xuất hiện sớm"
+    ],
+    "care": [
+      "Không bón thừa đạm, giữ dinh dưỡng cân đối",
+      "Giữ ruộng sạch cỏ và tàn dư cây bệnh",
+      "Hạn chế làm dập lá, nhất là sau mưa gió",
+      "Ưu tiên giống có khả năng chống chịu nếu vùng thường bị bệnh"
+    ],
+    "note": "Bệnh thường nặng hơn sau mưa gió, úng nước hoặc bón đạm quá nhiều."
+  },
+  "rice_brown_spot": {
+    "title": "Lúa – bệnh đốm nâu (Brown Spot)",
+    "symptoms": [
+      "Lá có các đốm nâu tròn hoặc bầu dục, giữa nhạt màu hơn",
+      "Đốm có thể có quầng vàng nhạt xung quanh",
+      "Khi nặng, lá cháy khô và hạt có thể bị ảnh hưởng"
+    ],
+    "care": [
+      "Bón phân cân đối, tránh để cây thiếu dinh dưỡng",
+      "Sử dụng hạt giống sạch và xử lý giống nếu cần",
+      "Giữ ruộng thông thoáng, hạn chế để cây suy yếu",
+      "Theo dõi từ giai đoạn mạ đến làm đòng"
+    ],
+    "note": "Bệnh thường nặng hơn trên ruộng nghèo dinh dưỡng hoặc cây bị stress."
+  },
+  "rice_healthy": {
+    "title": "Lúa khoẻ mạnh",
+    "symptoms": [
+      "Lá xanh đều, không có vết cháy, đốm nâu hay thoi xám",
+      "Phiến lá thẳng, không bạc lá, không khô mép",
+      "Cây sinh trưởng đồng đều, đẻ nhánh và trổ tốt"
+    ],
+    "care": [
+      "Bón phân cân đối, không lạm dụng đạm",
+      "Quản lý nước hợp lý theo từng giai đoạn",
+      "Thăm đồng định kỳ để phát hiện bệnh lá từ sớm"
+    ],
+    "note": "Giữ cây khoẻ ngay từ đầu vụ giúp giảm mạnh nguy cơ bùng phát bệnh."
+  },
+  "rice_leaf_blast": {
+    "title": "Lúa – bệnh đạo ôn lá (Leaf Blast)",
+    "symptoms": [
+      "Vết bệnh hình thoi, giữa xám trắng, viền nâu",
+      "Vết xuất hiện rải rác rồi lan nhanh khi ẩm cao",
+      "Lá bị nhiều vết sẽ khô cháy, cây giảm sinh trưởng"
+    ],
+    "care": [
+      "Không bón thừa đạm, nhất là giai đoạn lá non phát triển mạnh",
+      "Giữ ruộng thông thoáng, theo dõi sát khi trời âm u ẩm mát",
+      "Ưu tiên giống chống chịu tại vùng thường có bệnh",
+      "Phát hiện sớm để xử lý ngay từ các vết đầu tiên"
+    ],
+    "note": "Bệnh dễ bùng phát nhanh trong điều kiện ẩm mát và trên ruộng bón nhiều đạm."
+  },
+  "rice_leaf_scald": {
+    "title": "Lúa – bệnh cháy bìa lá / cháy lá (Leaf Scald)",
+    "symptoms": [
+      "Vết bệnh thường bắt đầu từ chóp lá hoặc mép lá",
+      "Vết lớn dần thành mảng loang không đều, giữa nhạt màu",
+      "Phần lá bị bệnh khô cháy, dễ nhầm với một số bệnh lá khác"
+    ],
+    "care": [
+      "Theo dõi kỹ từ giai đoạn giữa vụ đến cuối vụ",
+      "Bón phân cân đối và tránh để cây suy yếu",
+      "Vệ sinh tàn dư sau thu hoạch để giảm nguồn bệnh",
+      "Giữ ruộng thông thoáng và quản lý nước hợp lý"
+    ],
+    "note": "Bệnh có thể gây cháy lá rõ ở giai đoạn muộn, nhất là khi điều kiện ruộng không thuận lợi."
+  },
+  "rice_narrow_brown_spot": {
+    "title": "Lúa – bệnh đốm nâu hẹp (Narrow Brown Spot)",
+    "symptoms": [
+      "Xuất hiện các vết nâu hẹp, dài và mảnh trên lá",
+      "Vết bệnh chạy dọc theo lá, dễ thấy rõ ở giai đoạn sau",
+      "Khi nặng có thể làm lá khô sớm và giảm chất lượng ruộng lúa"
+    ],
+    "care": [
+      "Bón phân cân đối để cây không bị suy yếu kéo dài",
+      "Theo dõi từ giai đoạn cuối đẻ nhánh đến làm đòng, trổ",
+      "Vệ sinh đồng ruộng và giảm nguồn bệnh từ tàn dư",
+      "Giữ ruộng thoáng và quản lý nước hợp lý"
+    ],
+    "note": "Nếu bệnh nặng, lá và bẹ lá có thể chết sớm, ảnh hưởng năng suất."
+  }
+}
