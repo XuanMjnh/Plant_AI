@@ -37,7 +37,7 @@ def main():
     tflite_model = converter.convert()
     out_tflite.write_bytes(tflite_model)
 
-    print("✅ Convert xong!")
+    print("Convert done")
     print(f"- TFLite: {out_tflite}")
     print(f"- Quant: {args.quant}")
 

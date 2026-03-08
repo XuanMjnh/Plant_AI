@@ -93,12 +93,7 @@ def load_datasets(
 
 
 def build_leaf_augmentation() -> tf.keras.Sequential:
-    """
-    Augmentation dành cho ảnh lá cây chụp ngoài thực tế:
-    - cho phép đổi hướng lá
-    - xê dịch / zoom nhẹ
-    - thay đổi độ sáng / tương phản vừa phải
-    """
+
     return tf.keras.Sequential(
         [
             tf.keras.layers.RandomFlip("horizontal_and_vertical"),

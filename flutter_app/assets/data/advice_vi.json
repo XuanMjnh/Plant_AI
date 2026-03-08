@@ -1,269 +1,762 @@
 {
-  "corn_Blight": {
-    "title": "Ngô – bệnh cháy lá (Blight)",
+  "Apple___Apple_scab": {
+    "title": "Táo – bệnh ghẻ táo (Apple scab)",
     "symptoms": [
-      "Vết bệnh dài hình thoi hoặc hình 'xì gà', màu xám xanh đến nâu vàng",
-      "Vết bệnh lan dọc theo phiến lá, ranh giới khá rõ",
-      "Khi nặng, nhiều vết liên kết làm lá cháy khô từng mảng"
+      "Lá có đốm ô-liu đến nâu sẫm, bề mặt nhung như mốc mịn",
+      "Quả xuất hiện vết sần sùi, nứt hoặc biến dạng khi bệnh nặng",
+      "Lá vàng, rụng sớm làm cây suy và giảm chất lượng quả"
+    ],
+    "treatment": [
+      "Ưu tiên tỉa bỏ lá và quả bệnh, vệ sinh tàn dư dưới tán trước khi phun",
+      "Gợi ý hoạt chất thường dùng: lưu huỳnh (sulfur), captan, mancozeb, difenoconazole hoặc nhóm strobilurin/triazole đã đăng ký cho táo và bệnh ghẻ",
+      "Luân phiên nhóm hoạt chất khác cơ chế tác động, phun sớm khi lộc non vừa mở và ngừng theo đúng thời gian cách ly trên nhãn"
     ],
     "care": [
-      "Tỉa thông thoáng, tránh để ruộng quá rậm",
-      "Thu gom hoặc xử lý tàn dư sau vụ để giảm nguồn bệnh",
-      "Luân canh với cây trồng khác nếu ruộng bị bệnh lặp lại nhiều vụ",
-      "Theo dõi sớm giai đoạn lá giữa và lá trên để xử lý kịp thời"
+      "Tạo tán thông thoáng, cắt cành giao nhau để giảm ẩm trong tán",
+      "Không tưới phun mưa lên lá vào chiều tối; ưu tiên tưới gốc",
+      "Thu gom lá rụng, tiêu huỷ hoặc ủ đúng kỹ thuật để giảm nguồn bệnh qua vụ sau",
+      "Bón cân đối N-P-K, không bón thừa đạm làm lộc non quá mẫn cảm"
     ],
-    "note": "Bệnh thường phát triển mạnh khi thời tiết ẩm và lá ướt kéo dài."
+    "note": "Bệnh phát triển mạnh khi thời tiết mát ẩm và lá ướt kéo dài."
   },
-  "corn_Common_Rust": {
-    "title": "Ngô – bệnh gỉ sắt thường (Common Rust)",
+  "Apple___Black_rot": {
+    "title": "Táo – bệnh thối đen (Black rot)",
     "symptoms": [
-      "Xuất hiện nhiều ổ nổi nhỏ màu nâu đỏ đến màu gỉ sắt trên lá",
-      "Ổ bệnh có thể xuất hiện ở cả hai mặt lá",
-      "Khi nặng, lá vàng dần và giảm khả năng quang hợp"
+      "Quả có đốm nâu tím, sau lan rộng thành vùng thối đen khô",
+      "Lá có đốm tròn nâu tím, giữa vết bệnh nhạt màu dần",
+      "Cành có thể bị loét, nứt vỏ và làm khô cành"
+    ],
+    "treatment": [
+      "Cắt bỏ cành loét, quả khô treo cây và tàn dư bị bệnh trước khi xử lý thuốc",
+      "Gợi ý hoạt chất: thuốc gốc đồng ở giai đoạn nghỉ, captan, mancozeb, azoxystrobin hoặc difenoconazole nếu sản phẩm được đăng ký đúng cây và đúng bệnh",
+      "Phun phòng sớm sau mưa hoặc khi vườn đã từng nhiễm nặng; luân phiên hoạt chất để hạn chế kháng thuốc"
     ],
     "care": [
-      "Theo dõi ruộng thường xuyên, nhất là khi thời tiết mát và ẩm",
-      "Giữ dinh dưỡng cân đối để cây không bị suy yếu",
-      "Ưu tiên giống có mức chống chịu tốt nếu khu vực hay bị bệnh",
-      "Vệ sinh đồng ruộng và loại bỏ lá bị nặng nếu diện tích nhỏ"
+      "Tỉa thông thoáng và hạn chế làm xây xát quả, cành trong chăm sóc",
+      "Thu gom quả rụng, quả khô và cành bệnh ra khỏi vườn",
+      "Khử trùng dụng cụ cắt tỉa giữa các cây",
+      "Duy trì dinh dưỡng cân đối, tăng kali và canxi để nâng độ cứng quả"
     ],
-    "note": "Bệnh dễ bùng phát trong điều kiện mát ẩm; mức độ nặng phụ thuộc giống và thời tiết."
+    "note": "Nguồn bệnh thường tồn tại trên quả khô, cành chết và vết thương cơ giới."
   },
-  "corn_Gray_Leaf_Spot": {
-    "title": "Ngô – bệnh đốm lá xám (Gray Leaf Spot)",
+  "Apple___Cedar_apple_rust": {
+    "title": "Táo – bệnh gỉ sắt táo tuyết tùng (Cedar apple rust)",
     "symptoms": [
-      "Vết bệnh hình chữ nhật hoặc thuôn dài, bị giới hạn bởi gân lá",
-      "Màu vết bệnh xám nâu, đôi khi có quầng vàng nhạt",
-      "Nhiều vết nhập lại làm lá bị cháy xám diện rộng"
+      "Mặt trên lá có đốm vàng cam tròn, dần đậm màu",
+      "Mặt dưới lá hình thành cấu trúc dạng ống hoặc gai nhỏ màu cam",
+      "Quả non có thể bị vết sần, giảm phẩm chất"
+    ],
+    "treatment": [
+      "Phòng sớm từ giai đoạn lá non nếu khu vực có lịch sử bệnh",
+      "Gợi ý hoạt chất: sulfur, myclobutanil, difenoconazole hoặc nhóm strobilurin đã đăng ký cho bệnh gỉ sắt trên táo",
+      "Nếu gần nguồn cây ký chủ phụ như tuyết tùng/bách xù, cần kết hợp vệ sinh nguồn bệnh xung quanh"
     ],
     "care": [
-      "Luân canh và xử lý tàn dư cây bệnh sau thu hoạch",
-      "Không trồng quá dày, tăng thông thoáng tán lá",
-      "Ưu tiên giống có khả năng chống chịu",
-      "Theo dõi bệnh từ các lá thấp vì bệnh thường xuất hiện từ dưới lên"
+      "Tăng thông thoáng tán, tránh để lá ẩm lâu sau mưa hoặc tưới",
+      "Theo dõi lộc non đầu vụ vì đây là giai đoạn mẫn cảm nhất",
+      "Bón phân cân đối, không thúc đạm quá mạnh",
+      "Thu gom lá bệnh nặng và duy trì vườn sạch cỏ, sạch tàn dư"
     ],
-    "note": "Bệnh phát triển mạnh khi ẩm độ cao và lá ướt lâu."
+    "note": "Bệnh cần cả cây táo và ký chủ phụ thuộc nhóm Juniperus để hoàn thành chu kỳ."
   },
-  "corn_Healthy": {
-    "title": "Ngô khoẻ mạnh",
+  "Apple___healthy": {
+    "title": "Táo – cây khỏe mạnh",
     "symptoms": [
-      "Lá xanh đều, không có đốm, ổ gỉ hay vết cháy bất thường",
-      "Phiến lá nguyên vẹn, không khô mép, không biến màu",
-      "Cây sinh trưởng đồng đều, thân lá cứng cáp"
+      "Lá xanh đồng đều, phiến lá phẳng, ít dị dạng",
+      "Quả phát triển đều, vỏ sáng và không có đốm bất thường",
+      "Tán cây cân đối, lộc non phát triển tốt"
+    ],
+    "treatment": [
+      "Không phun thuốc khi chưa có ngưỡng nguy cơ; ưu tiên theo dõi và phòng ngừa",
+      "Có thể dùng chế phẩm sinh học hoặc dinh dưỡng lá khi thời tiết bất lợi, theo đúng hướng dẫn sản phẩm",
+      "Chỉ xử lý thuốc BVTV khi phát hiện triệu chứng sớm hoặc có cảnh báo dịch hại tại địa phương"
     ],
     "care": [
-      "Tưới và thoát nước hợp lý, tránh khô hạn hoặc úng",
-      "Bón phân cân đối theo giai đoạn sinh trưởng",
-      "Thường xuyên kiểm tra lá dưới và lá giữa để phát hiện bệnh sớm"
+      "Cắt tỉa tạo tán, vệ sinh vườn và kiểm tra sâu bệnh định kỳ",
+      "Tưới đủ ẩm, tránh úng; bón phân cân đối theo giai đoạn sinh trưởng",
+      "Bao quả hoặc che mưa nếu mô hình canh tác cho phép",
+      "Ghi chép đầy đủ mọi lần bón phân, tưới và xử lý thuốc"
     ],
-    "note": "Duy trì ruộng thông thoáng và sạch tàn dư giúp giảm nhiều bệnh lá."
+    "note": "Cây khỏe cần được duy trì bằng phòng ngừa tổng hợp hơn là lạm dụng thuốc."
   },
-  "mango_Anthracnose": {
-    "title": "Xoài – bệnh thán thư (Anthracnose)",
+  "Blueberry___healthy": {
+    "title": "Việt quất – cây khỏe mạnh",
     "symptoms": [
-      "Lá, đọt non và chùm hoa xuất hiện đốm nâu đen",
-      "Đọt non có thể bị khô cháy, hoa bị đen và rụng",
-      "Quả non hoặc quả già có đốm đen, nhăn và dễ thối"
+      "Lá xanh tốt, không có đốm cháy mép hoặc vàng gân bất thường",
+      "Cây ra chồi và đậu quả đồng đều",
+      "Rễ phát triển tốt, giá thể/đất tơi xốp và thoát nước"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi cây không có triệu chứng",
+      "Chỉ dùng chế phẩm sinh học hoặc phòng nấm rễ khi khu vực có nguy cơ cao và sản phẩm đã đăng ký",
+      "Tránh phun phòng tràn lan trong điều kiện vườn sạch bệnh"
     ],
     "care": [
-      "Cắt tỉa cành, lá, hoa hoặc quả bệnh và tiêu huỷ",
-      "Giữ tán cây thông thoáng để giảm ẩm",
-      "Dọn lá rụng và tàn dư dưới gốc",
-      "Theo dõi sát giai đoạn ra hoa, đậu quả non để xử lý sớm"
+      "Duy trì pH đất/giá thể chua phù hợp, tưới nước sạch và ổn định",
+      "Phủ gốc hữu cơ, hạn chế cỏ dại và giữ ẩm đều",
+      "Không để úng rễ; kiểm soát thoát nước sau mưa",
+      "Theo dõi lá non để phát hiện sớm thiếu dinh dưỡng và bệnh"
     ],
-    "note": "Bệnh phát triển mạnh khi ẩm cao, mưa nhiều và thời tiết nóng ẩm."
+    "note": "Việt quất rất nhạy với pH đất và tình trạng úng nước."
   },
-  "mango_Bacterial Canker": {
-    "title": "Xoài – bệnh loét vi khuẩn (Bacterial Canker)",
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "title": "Cherry – bệnh phấn trắng (Powdery mildew)",
     "symptoms": [
-      "Ban đầu là các vết úng nước nhỏ, không đều trên lá",
-      "Vết bệnh lớn dần thành mảng hoại tử, lá vàng và rụng",
-      "Trên quả có vết sẫm màu, có thể nứt và rỉ dịch nhầy"
+      "Lá non, đọt non hoặc quả non có lớp phấn trắng xám",
+      "Lá cong, xoăn, sinh trưởng chậm và dễ biến dạng",
+      "Quả non có thể sần vỏ, giảm chất lượng thương phẩm"
+    ],
+    "treatment": [
+      "Cắt bỏ chồi bị phủ phấn dày để giảm áp lực bệnh",
+      "Gợi ý hoạt chất: sulfur, potassium bicarbonate, myclobutanil hoặc hexaconazole nếu được đăng ký cho cherry và bệnh phấn trắng",
+      "Phun sớm khi mới chớm bệnh, lặp lại theo khuyến cáo nhãn trong điều kiện ẩm mát"
     ],
     "care": [
-      "Cắt bỏ bộ phận bị bệnh nặng và tiêu huỷ",
-      "Hạn chế làm xây xát cây, quả và cành non",
-      "Tỉa tán để giảm ẩm và giảm lây lan",
-      "Theo dõi kỹ lá non, cành non và quả non sau mưa"
+      "Tỉa thông thoáng tán, hạn chế bón thừa đạm",
+      "Tưới gốc thay vì tưới lên tán",
+      "Kiểm tra lộc non thường xuyên trong giai đoạn bật chồi",
+      "Thu gom bộ phận bệnh và khử trùng dụng cụ cắt tỉa"
     ],
-    "note": "Bệnh có thể lây mạnh qua mưa, gió và dụng cụ cắt tỉa không vệ sinh."
+    "note": "Phấn trắng thường bùng mạnh khi ngày ấm, đêm ẩm và tán rậm."
   },
-  "mango_Cutting Weevil": {
-    "title": "Xoài – sâu cắt lá / mọt cắt lá (Cutting Weevil)",
+  "Cherry_(including_sour)___healthy": {
+    "title": "Cherry – cây khỏe mạnh",
     "symptoms": [
-      "Lá non bị cắn khuyết mép hoặc bị cắt, cuốn, xoắn",
-      "Đọt non dễ bị héo và khô khi bị hại nặng",
-      "Tán non bị xơ xác, cây giảm sinh trưởng"
+      "Lá xanh đều, bề mặt sạch, không phủ phấn hay đốm hoại tử",
+      "Chồi non phát triển thẳng, không cong xoắn",
+      "Quả non hình thành đồng đều"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi cây khỏe",
+      "Có thể áp dụng phòng ngừa sinh học hoặc gốc đồng ở giai đoạn rủi ro cao nếu địa phương có tiền sử bệnh, theo đúng đăng ký",
+      "Chỉ xử lý khi có dự báo mưa kéo dài hoặc phát hiện ổ bệnh đầu tiên"
     ],
     "care": [
-      "Thu gom và tiêu huỷ lá non bị cắt, bị cuốn hoặc rụng bất thường",
-      "Theo dõi chồi non thường xuyên vì sâu hại mạnh trên đọt mới",
-      "Tỉa bỏ phần non bị hại nặng để hạn chế lây lan ổ sâu",
-      "Giữ vườn sạch cỏ và thông thoáng để giảm nơi trú ẩn"
+      "Tỉa thông thoáng, quản lý cỏ dại và vệ sinh gốc",
+      "Bón cân đối, tăng kali và canxi ở giai đoạn nuôi quả",
+      "Kiểm tra sâu bệnh định kỳ sau mưa hoặc sương nhiều",
+      "Ghi nhật ký canh tác để truy xuất"
     ],
-    "note": "Sâu thường gây hại rõ trên đợt lá non mới ra; phát hiện sớm sẽ dễ xử lý hơn."
+    "note": "Cherry rất cần tán thoáng và quản lý ẩm tốt để hạn chế bệnh lá, quả."
   },
-  "mango_Die Back": {
-    "title": "Xoài – bệnh khô cành / chết ngọn (Die Back)",
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "title": "Ngô – bệnh đốm lá xám / Cercospora (Gray leaf spot)",
     "symptoms": [
-      "Cành non và cành nhỏ khô dần từ ngọn vào trong",
-      "Lá chuyển nâu, mép lá cuốn lên rồi rụng",
-      "Vỏ cành sẫm màu, đôi khi có rỉ nhựa vàng nâu"
+      "Vết bệnh dài hình chữ nhật hoặc thoi, màu xám nâu, chạy dọc gân lá",
+      "Vết bệnh liên kết làm lá khô cháy từng mảng",
+      "Bệnh thường xuất hiện từ lá giữa rồi lan lên lá trên"
+    ],
+    "treatment": [
+      "Tiêu huỷ hoặc vùi tàn dư sau thu hoạch để giảm nguồn bệnh",
+      "Gợi ý hoạt chất: azoxystrobin, pyraclostrobin, propiconazole hoặc hỗn hợp strobilurin + triazole đã đăng ký cho ngô và bệnh đốm lá",
+      "Phun khi bệnh mới xuất hiện ở lá giữa/lá trên, ưu tiên ruộng gieo dày và ẩm kéo dài"
     ],
     "care": [
-      "Cắt bỏ cành bệnh xuống dưới phần bị hại và tiêu huỷ",
-      "Khử trùng dụng cụ cắt tỉa sau khi dùng",
-      "Tạo tán thông thoáng, tránh để ẩm kéo dài",
-      "Chăm cây cân đối để giảm suy kiệt sau khi cắt tỉa"
+      "Gieo mật độ hợp lý, tránh ruộng quá rậm",
+      "Luân canh với cây khác họ hoà thảo nếu ruộng bị lặp bệnh nhiều vụ",
+      "Bón cân đối, tránh thừa đạm và thiếu kali",
+      "Theo dõi sớm từ giai đoạn 8 lá đến trổ cờ"
     ],
-    "note": "Nếu để muộn, bệnh có thể lan dần từ cành nhỏ sang cành lớn."
+    "note": "Bệnh phát triển mạnh khi lá ướt kéo dài và ruộng lưu tồn nhiều tàn dư."
   },
-  "mango_Gall Midge": {
-    "title": "Xoài – sâu muỗi tạo u sần lá (Gall Midge)",
+  "Corn_(maize)___Common_rust_": {
+    "title": "Ngô – bệnh gỉ sắt thường (Common rust)",
     "symptoms": [
-      "Lá xuất hiện các u sần hoặc nốt phồng bất thường",
-      "Lá non dễ biến dạng, quăn hoặc rụng sớm",
-      "Cây non bị hại nặng có thể chậm phát triển"
+      "Trên lá có nhiều ổ nổi nhỏ màu nâu đỏ như gỉ sắt",
+      "Ổ bệnh phân bố rải rác ở cả hai mặt lá",
+      "Khi nặng lá vàng, giảm diện tích quang hợp và cây suy"
+    ],
+    "treatment": [
+      "Theo dõi ruộng từ giai đoạn sinh trưởng sinh dưỡng đến trước trổ",
+      "Gợi ý hoạt chất: propiconazole, tebuconazole, azoxystrobin hoặc hỗn hợp strobilurin + triazole đã đăng ký cho ngô bị gỉ sắt",
+      "Phun khi mật độ ổ bệnh tăng nhanh trên lá chức năng, luân phiên cơ chế tác động"
     ],
     "care": [
-      "Ngắt bỏ và tiêu huỷ lá bị u sần nhiều",
-      "Theo dõi đợt lá non vì sâu thường gây hại mạnh ở giai đoạn này",
-      "Giữ vườn thông thoáng và vệ sinh sạch tàn dư",
-      "Kiểm tra thường xuyên mặt lá để phát hiện sớm"
+      "Gieo giống phù hợp với vùng và thời vụ để né bệnh",
+      "Không bón thừa đạm; bổ sung kali giúp cứng cây",
+      "Giữ ruộng thông thoáng, làm cỏ tốt",
+      "Thu gom tàn dư sau vụ và luân canh nếu áp lực bệnh cao"
     ],
-    "note": "Nếu mật độ cao, sâu có thể làm giảm diện tích lá hữu hiệu và làm cây suy yếu."
+    "note": "Gỉ sắt thường tăng mạnh trong thời tiết mát và ẩm."
   },
-  "mango_Healthy": {
-    "title": "Xoài khoẻ mạnh",
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "title": "Ngô – bệnh cháy lá phương bắc (Northern Leaf Blight)",
     "symptoms": [
-      "Lá xanh tự nhiên, không có đốm đen, phấn trắng hay mảng mốc đen",
-      "Đọt non phát triển đều, không xoăn, không khô ngọn",
-      "Lá không có u sần, không bị cắn khuyết hay biến dạng"
+      "Vết bệnh dài hình xì gà, màu xám xanh đến nâu vàng",
+      "Vết bệnh lan dọc phiến lá, ranh giới khá rõ",
+      "Khi nặng, nhiều vết liên kết làm lá cháy khô thành mảng"
+    ],
+    "treatment": [
+      "Loại bỏ tàn dư bệnh và ưu tiên luân canh nếu ruộng nhiễm nặng nhiều vụ",
+      "Gợi ý hoạt chất: azoxystrobin, pyraclostrobin, propiconazole hoặc hỗn hợp phù hợp đã đăng ký cho ngô",
+      "Xử lý sớm ở giai đoạn trước trổ đến sau trổ nếu bệnh xuất hiện trên lá gần bắp"
     ],
     "care": [
-      "Tỉa tán định kỳ để tăng ánh sáng và thông thoáng",
-      "Bón phân cân đối và tưới hợp lý theo giai đoạn",
-      "Theo dõi kỹ vào thời kỳ ra đọt non, ra hoa và đậu quả"
+      "Gieo thưa vừa phải, tránh đọng sương trong tán",
+      "Bón phân cân đối, tăng sức chống chịu của cây",
+      "Vệ sinh đồng ruộng và quản lý cỏ ký chủ phụ",
+      "Theo dõi lá giữa và lá trên sau các đợt mưa kéo dài"
     ],
-    "note": "Vườn thông thoáng, sạch cỏ và ít sâu chích hút sẽ giảm rõ nguy cơ bệnh trên lá."
+    "note": "Bệnh thường gây thất thu mạnh nếu tấn công sớm vào các lá công năng."
   },
-  "mango_Powdery Mildew": {
-    "title": "Xoài – bệnh phấn trắng (Powdery Mildew)",
+  "Corn_(maize)___healthy": {
+    "title": "Ngô – cây khỏe mạnh",
     "symptoms": [
-      "Có lớp phấn trắng xám trên lá, chùm hoa và quả non",
-      "Hoa và quả non bị nâu, khô rồi rụng sớm",
-      "Bộ phận bị bệnh trông như phủ bụi trắng"
+      "Lá xanh đều, không có ổ gỉ hay vết cháy kéo dài",
+      "Thân cứng, cây sinh trưởng đồng đều theo hàng",
+      "Bắp hình thành tốt, lá bi xanh và sạch bệnh"
+    ],
+    "treatment": [
+      "Không cần dùng thuốc nếu ruộng khỏe và chưa có dấu hiệu bệnh",
+      "Ưu tiên kiểm tra định kỳ, dùng thuốc chỉ khi có triệu chứng hoặc cảnh báo dịch",
+      "Có thể dùng chế phẩm sinh học hỗ trợ đất/rễ nếu ruộng có lịch sử bệnh"
     ],
     "care": [
-      "Cắt bỏ chùm hoa hoặc bộ phận bị bệnh nặng",
-      "Giữ tán cây thoáng, tránh ẩm kéo dài trong thời kỳ ra hoa",
-      "Theo dõi từ lúc ra đọt non đến giai đoạn hoa nở",
-      "Xử lý sớm ngay khi mới thấy lớp phấn trắng"
+      "Gieo đúng mật độ, thoát nước tốt, bón cân đối",
+      "Luân canh và quản lý tàn dư sau thu hoạch",
+      "Theo dõi các lá giữa và lá trên trong mùa mưa",
+      "Ghi nhật ký đồng ruộng để quản lý vật tư"
     ],
-    "note": "Bệnh đặc biệt nguy hiểm ở giai đoạn ra hoa và đậu quả non."
+    "note": "Phòng bệnh trên ngô hiệu quả nhất là vệ sinh tàn dư và quản lý mật độ."
   },
-  "mango_Sooty Mould": {
-    "title": "Xoài – bệnh muội đen (Sooty Mould)",
+  "Grape___Black_rot": {
+    "title": "Nho – bệnh thối đen (Black rot)",
     "symptoms": [
-      "Bề mặt lá, cành hoặc quả có lớp mốc đen như bồ hóng",
-      "Lá bị phủ đen, giảm quang hợp",
-      "Thường đi kèm sự xuất hiện của rệp, rầy, rệp sáp hoặc côn trùng tiết mật ngọt"
+      "Lá có đốm tròn nâu với viền sẫm, giữa vết có thể xuất hiện chấm đen nhỏ",
+      "Quả non bị thâm nâu rồi teo khô thành quả xác đen",
+      "Cành non có đốm thẫm và có thể nứt nhẹ"
+    ],
+    "treatment": [
+      "Thu gom quả xác, chùm bệnh và lá bệnh ra khỏi giàn",
+      "Gợi ý hoạt chất: mancozeb, captan, azoxystrobin, difenoconazole hoặc nhóm triazole/strobilurin đã đăng ký cho nho và bệnh thối đen",
+      "Phun phòng từ giai đoạn lộc non đến sau đậu quả, nhất là sau mưa"
     ],
     "care": [
-      "Ưu tiên kiểm soát côn trùng chích hút tiết mật ngọt",
-      "Tỉa bỏ cành bị nặng và vệ sinh tán cây",
-      "Có thể rửa sạch bớt lớp muội trên cây nhỏ hoặc cành thấp",
-      "Giữ vườn thông thoáng để hạn chế ẩm và mật độ côn trùng"
+      "Tỉa lá và chùm hợp lý để giàn thông thoáng",
+      "Không tưới phun lên tán vào chiều tối",
+      "Khử trùng kéo cắt tỉa và không để chùm sát nhau quá dày",
+      "Bón cân đối, tránh đạm cao làm lộc quá non yếu"
     ],
-    "note": "Muội đen thường là hệ quả của mật ngọt do côn trùng tiết ra, nên cần xử lý cả nguyên nhân lẫn lớp nấm bám."
+    "note": "Nguồn bệnh tồn tại tốt trên quả xác khô còn treo trên giàn hoặc rơi dưới gốc."
   },
-  "rice_bacterial_leaf_blight": {
-    "title": "Lúa – bệnh bạc lá vi khuẩn (Bacterial Leaf Blight)",
+  "Grape___Esca_(Black_Measles)": {
+    "title": "Nho – bệnh Esca / đốm đen thân gỗ (Black Measles)",
     "symptoms": [
-      "Lá úa vàng từ chóp hoặc mép lá rồi khô dần",
-      "Vết bệnh kéo dài theo phiến lá, sau đó lá bạc trắng",
-      "Cây con có thể héo rũ nếu bệnh xuất hiện sớm"
+      "Lá có vùng vàng nâu giữa gân, cháy mép theo dạng loang lổ",
+      "Quả có thể xuất hiện chấm đen nhỏ, giảm chất lượng",
+      "Cành, thân gỗ suy yếu, có thể héo cành từng phần hoặc đột ngột"
+    ],
+    "treatment": [
+      "Hiện không có thuốc trị khỏi hoàn toàn trên cây đã nhiễm nặng; ưu tiên cắt bỏ phần gỗ bệnh và tiêu huỷ",
+      "Bảo vệ vết cắt sau tỉa bằng chế phẩm phù hợp, có thể kết hợp thuốc gốc đồng hoặc tác nhân đối kháng như Trichoderma nếu sản phẩm được phép dùng",
+      "Khử trùng dụng cụ cắt tỉa giữa các cây để tránh lây qua vết thương"
     ],
     "care": [
-      "Không bón thừa đạm, giữ dinh dưỡng cân đối",
-      "Giữ ruộng sạch cỏ và tàn dư cây bệnh",
-      "Hạn chế làm dập lá, nhất là sau mưa gió",
-      "Ưu tiên giống có khả năng chống chịu nếu vùng thường bị bệnh"
+      "Tỉa cành lúc khô ráo, tránh tạo nhiều vết thương lớn",
+      "Duy trì dinh dưỡng và tưới hợp lý để giảm sốc sinh lý",
+      "Thay cây nếu cây nhiễm nặng, suy kiệt kéo dài",
+      "Quản lý giàn thông thoáng và giảm nắng gắt trực tiếp lên thân bị tổn thương"
     ],
-    "note": "Bệnh thường nặng hơn sau mưa gió, úng nước hoặc bón đạm quá nhiều."
+    "note": "Esca là bệnh phức hợp trên thân gỗ; quản lý chủ yếu bằng vệ sinh, cắt bỏ mô bệnh và phòng vết thương."
   },
-  "rice_brown_spot": {
-    "title": "Lúa – bệnh đốm nâu (Brown Spot)",
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "title": "Nho – bệnh cháy lá / đốm lá Isariopsis",
     "symptoms": [
-      "Lá có các đốm nâu tròn hoặc bầu dục, giữa nhạt màu hơn",
-      "Đốm có thể có quầng vàng nhạt xung quanh",
-      "Khi nặng, lá cháy khô và hạt có thể bị ảnh hưởng"
+      "Lá có đốm nâu góc cạnh hoặc bất định, sau chuyển xám ở giữa",
+      "Mặt dưới lá có thể có lớp mốc sẫm mịn ở vết bệnh",
+      "Lá già bị cháy mép, rụng sớm khi bệnh nặng"
+    ],
+    "treatment": [
+      "Tỉa bỏ lá bệnh nặng để giảm áp lực nguồn nấm",
+      "Gợi ý hoạt chất: thuốc gốc đồng, mancozeb, chlorothalonil, azoxystrobin hoặc difenoconazole nếu được đăng ký cho nho và bệnh đốm/cháy lá",
+      "Phun sớm sau các đợt mưa ẩm kéo dài và luân phiên hoạt chất"
     ],
     "care": [
-      "Bón phân cân đối, tránh để cây thiếu dinh dưỡng",
-      "Sử dụng hạt giống sạch và xử lý giống nếu cần",
-      "Giữ ruộng thông thoáng, hạn chế để cây suy yếu",
-      "Theo dõi từ giai đoạn mạ đến làm đòng"
+      "Làm giàn thoáng, tỉa lá che khuất chùm",
+      "Hạn chế tưới phun mưa lên tán",
+      "Thu gom tàn dư sau cắt tỉa và sau thu hoạch",
+      "Bón phân cân đối, tăng kali và vi lượng phù hợp"
     ],
-    "note": "Bệnh thường nặng hơn trên ruộng nghèo dinh dưỡng hoặc cây bị stress."
+    "note": "Bệnh tăng mạnh trong vườn ẩm, thiếu thông thoáng và vệ sinh kém."
   },
-  "rice_healthy": {
-    "title": "Lúa khoẻ mạnh",
+  "Grape___healthy": {
+    "title": "Nho – cây khỏe mạnh",
     "symptoms": [
-      "Lá xanh đều, không có vết cháy, đốm nâu hay thoi xám",
-      "Phiến lá thẳng, không bạc lá, không khô mép",
-      "Cây sinh trưởng đồng đều, đẻ nhánh và trổ tốt"
+      "Lá dày xanh, không đốm, chùm quả sạch và phát triển đều",
+      "Cành bánh tẻ chắc, giàn thông thoáng",
+      "Rễ và thân không có dấu hiệu suy kiệt hay héo cành"
+    ],
+    "treatment": [
+      "Không xử lý thuốc khi cây và giàn đang sạch bệnh",
+      "Ưu tiên biện pháp vệ sinh, tỉa cành, tỉa lá và dự báo thời tiết để phòng bệnh",
+      "Chỉ dùng thuốc theo lịch sử vườn và ngưỡng nguy cơ thực tế"
     ],
     "care": [
-      "Bón phân cân đối, không lạm dụng đạm",
-      "Quản lý nước hợp lý theo từng giai đoạn",
-      "Thăm đồng định kỳ để phát hiện bệnh lá từ sớm"
+      "Tạo giàn thoáng, buộc cành đúng kỹ thuật",
+      "Tưới nhỏ giọt hoặc tưới gốc, tránh ướt tán kéo dài",
+      "Bón phân hữu cơ hoai, kết hợp N-P-K cân đối",
+      "Kiểm tra chùm và lá sau mưa để phát hiện sớm nấm bệnh"
     ],
-    "note": "Giữ cây khoẻ ngay từ đầu vụ giúp giảm mạnh nguy cơ bùng phát bệnh."
+    "note": "Nho rất nhạy với ẩm độ cao trong tán; thông thoáng là yếu tố then chốt."
   },
-  "rice_leaf_blast": {
-    "title": "Lúa – bệnh đạo ôn lá (Leaf Blast)",
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "title": "Cam/quýt – bệnh vàng lá gân xanh (Huanglongbing, Citrus greening)",
     "symptoms": [
-      "Vết bệnh hình thoi, giữa xám trắng, viền nâu",
-      "Vết xuất hiện rải rác rồi lan nhanh khi ẩm cao",
-      "Lá bị nhiều vết sẽ khô cháy, cây giảm sinh trưởng"
+      "Lá vàng loang lổ không đối xứng, gân còn xanh rõ",
+      "Quả nhỏ, méo lệch, chín không đều và thường lệch tâm",
+      "Cây còi cọc, cành suy dần, năng suất giảm mạnh"
+    ],
+    "treatment": [
+      "Không có thuốc trị khỏi hoàn toàn cho cây đã nhiễm; cần nhổ bỏ cây bệnh nặng để cắt nguồn lây",
+      "Dùng cây giống sạch bệnh, có nguồn gốc rõ ràng và vườn ươm đạt yêu cầu",
+      "Quản lý rầy chổng cánh – môi giới truyền bệnh – bằng biện pháp tổng hợp: tỉa lộc đồng loạt, bẫy/vật tư phù hợp, dầu khoáng hoặc thuốc trừ rầy đã đăng ký cho cây có múi"
     ],
     "care": [
-      "Không bón thừa đạm, nhất là giai đoạn lá non phát triển mạnh",
-      "Giữ ruộng thông thoáng, theo dõi sát khi trời âm u ẩm mát",
-      "Ưu tiên giống chống chịu tại vùng thường có bệnh",
-      "Phát hiện sớm để xử lý ngay từ các vết đầu tiên"
+      "Theo dõi lộc non thường xuyên vì rầy tập trung mạnh ở giai đoạn này",
+      "Khống chế cỏ và cây ký chủ phụ quanh vườn",
+      "Bón phân cân đối, tăng hữu cơ và vi lượng để duy trì sức cây chưa nhiễm",
+      "Khử trùng dụng cụ, hạn chế vận chuyển mắt ghép/cành giống không rõ nguồn"
     ],
-    "note": "Bệnh dễ bùng phát nhanh trong điều kiện ẩm mát và trên ruộng bón nhiều đạm."
+    "note": "Đây là bệnh nguy hiểm, quản lý trọng tâm là cây giống sạch bệnh và kiểm soát rầy chổng cánh."
   },
-  "rice_leaf_scald": {
-    "title": "Lúa – bệnh cháy bìa lá / cháy lá (Leaf Scald)",
+  "Peach___Bacterial_spot": {
+    "title": "Đào – bệnh đốm vi khuẩn (Bacterial spot)",
     "symptoms": [
-      "Vết bệnh thường bắt đầu từ chóp lá hoặc mép lá",
-      "Vết lớn dần thành mảng loang không đều, giữa nhạt màu",
-      "Phần lá bị bệnh khô cháy, dễ nhầm với một số bệnh lá khác"
+      "Lá có đốm nhỏ sẫm màu, có thể thủng lỗ khi mô chết rụng",
+      "Quả có đốm đen lõm, nứt hoặc rỉ nhựa nhẹ",
+      "Đọt non có thể bị cháy đầu và sinh trưởng kém"
+    ],
+    "treatment": [
+      "Cắt bỏ cành bệnh nặng, vệ sinh lá và quả rụng",
+      "Gợi ý hoạt chất: thuốc gốc đồng, copper hydroxide/copper oxychloride, hoặc chế phẩm sinh học đối kháng đã đăng ký cho đào và bệnh vi khuẩn",
+      "Phun vào giai đoạn nguy cơ cao sau mưa, tránh phun quá sát ngày thu hoạch"
     ],
     "care": [
-      "Theo dõi kỹ từ giai đoạn giữa vụ đến cuối vụ",
-      "Bón phân cân đối và tránh để cây suy yếu",
-      "Vệ sinh tàn dư sau thu hoạch để giảm nguồn bệnh",
-      "Giữ ruộng thông thoáng và quản lý nước hợp lý"
+      "Tỉa thoáng tán để lá mau khô sau mưa",
+      "Không tưới phun mưa lên tán nếu vườn đang có bệnh",
+      "Giảm gây xây xát lá, quả trong chăm sóc",
+      "Bón cân đối, không bón thừa đạm làm mô non dễ nhiễm"
     ],
-    "note": "Bệnh có thể gây cháy lá rõ ở giai đoạn muộn, nhất là khi điều kiện ruộng không thuận lợi."
+    "note": "Bệnh vi khuẩn bộc phát mạnh khi mưa gió và có vết thương trên mô non."
   },
-  "rice_narrow_brown_spot": {
-    "title": "Lúa – bệnh đốm nâu hẹp (Narrow Brown Spot)",
+  "Peach___healthy": {
+    "title": "Đào – cây khỏe mạnh",
     "symptoms": [
-      "Xuất hiện các vết nâu hẹp, dài và mảnh trên lá",
-      "Vết bệnh chạy dọc theo lá, dễ thấy rõ ở giai đoạn sau",
-      "Khi nặng có thể làm lá khô sớm và giảm chất lượng ruộng lúa"
+      "Lá xanh, không đốm thủng hay cháy mép",
+      "Quả non sạch, bề mặt đều màu",
+      "Lộc phát triển tốt, tán cân đối"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi cây khỏe",
+      "Có thể áp dụng phòng ngừa sinh học hoặc gốc đồng ở giai đoạn rủi ro cao nếu địa phương có tiền sử bệnh, theo đúng đăng ký",
+      "Chỉ xử lý khi có dự báo mưa kéo dài hoặc phát hiện ổ bệnh đầu tiên"
     ],
     "care": [
-      "Bón phân cân đối để cây không bị suy yếu kéo dài",
-      "Theo dõi từ giai đoạn cuối đẻ nhánh đến làm đòng, trổ",
-      "Vệ sinh đồng ruộng và giảm nguồn bệnh từ tàn dư",
-      "Giữ ruộng thoáng và quản lý nước hợp lý"
+      "Tạo tán thông thoáng, vệ sinh lá quả rụng",
+      "Tưới gốc, tránh làm ướt tán quá lâu",
+      "Bón cân đối và bổ sung hữu cơ định kỳ",
+      "Ghi chép nhật ký để theo dõi lần xử lý và thời gian cách ly"
     ],
-    "note": "Nếu bệnh nặng, lá và bẹ lá có thể chết sớm, ảnh hưởng năng suất."
+    "note": "Đào khỏe cần được duy trì bằng quản lý ẩm độ và vệ sinh tốt."
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "title": "Ớt chuông – bệnh đốm vi khuẩn (Bacterial spot)",
+    "symptoms": [
+      "Lá có đốm nhỏ thẫm màu, viền vàng, sau có thể rách thủng",
+      "Quả có đốm sần sùi hoặc lõm nhỏ, giảm giá trị thương phẩm",
+      "Cây còi, rụng lá và giảm đậu quả khi bệnh nặng"
+    ],
+    "treatment": [
+      "Nhổ bỏ cây bệnh nặng và vệ sinh lá quả rụng trong luống",
+      "Gợi ý hoạt chất: thuốc gốc đồng, hỗn hợp đồng phù hợp, hoặc chế phẩm sinh học Bacillus spp. đã đăng ký cho ớt và bệnh vi khuẩn",
+      "Luân phiên biện pháp sinh học – hoá học; không phun liên tục một hoạt chất"
+    ],
+    "care": [
+      "Dùng hạt/giống sạch bệnh, xử lý giá thể và khay ươm sạch",
+      "Tưới nhỏ giọt, hạn chế bắn đất lên lá",
+      "Luân canh với cây không cùng họ cà",
+      "Tỉa lá gốc, tạo thông thoáng và tránh thao tác khi lá đang ướt"
+    ],
+    "note": "Bệnh lây mạnh qua hạt giống, nước bắn và thao tác trên cây ướt."
+  },
+  "Pepper,_bell___healthy": {
+    "title": "Ớt chuông – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh dày, không đốm nâu hay viền vàng",
+      "Thân đứng, đọt khỏe và ra hoa đậu quả đều",
+      "Quả bóng đẹp, không sần hay lõm bất thường"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi vườn sạch bệnh",
+      "Ưu tiên chế phẩm sinh học và vệ sinh nhà lưới/nhà màng nếu có",
+      "Chỉ dùng thuốc khi có triệu chứng thật hoặc cảnh báo dịch"
+    ],
+    "care": [
+      "Tưới nhỏ giọt, giữ ẩm ổn định nhưng không úng",
+      "Tỉa cành lá gốc, buộc cây và làm thông thoáng tán",
+      "Bón cân đối, tăng canxi – kali ở giai đoạn nuôi quả",
+      "Thu gom tàn dư sau mỗi lứa thu hoạch"
+    ],
+    "note": "Ớt chuông rất cần giá thể/đất sạch và tưới hợp lý để giữ cây khỏe."
+  },
+  "Potato___Early_blight": {
+    "title": "Khoai tây – bệnh cháy lá sớm (Early blight)",
+    "symptoms": [
+      "Lá già xuất hiện đốm nâu tròn có vòng đồng tâm như bia bắn",
+      "Mô quanh vết bệnh vàng dần, lá cháy từ dưới lên trên",
+      "Thân có thể có vết thâm dài làm cây suy"
+    ],
+    "treatment": [
+      "Cắt bỏ lá bệnh nặng và vệ sinh tàn dư sau thu hoạch",
+      "Gợi ý hoạt chất: chlorothalonil, mancozeb, azoxystrobin, difenoconazole hoặc hỗn hợp đã đăng ký cho khoai tây và bệnh cháy lá sớm",
+      "Phun sớm khi mới có đốm đầu tiên, luân phiên hoạt chất khác cơ chế"
+    ],
+    "care": [
+      "Luân canh 2–3 vụ với cây khác họ cà nếu có điều kiện",
+      "Không tưới phun lên lá lúc chiều tối",
+      "Bón cân đối, không thiếu kali và vi lượng",
+      "Giữ ruộng sạch cỏ, thông thoáng và thoát nước tốt"
+    ],
+    "note": "Bệnh thường xuất hiện sớm trên lá già và tăng nhanh khi cây suy dinh dưỡng."
+  },
+  "Potato___Late_blight": {
+    "title": "Khoai tây – bệnh sương mai / cháy lá muộn (Late blight)",
+    "symptoms": [
+      "Lá có vết úng nước xanh xám, nhanh chóng chuyển nâu đen",
+      "Mặt dưới lá ở rìa vết bệnh có thể có lớp mốc trắng khi ẩm",
+      "Thân và củ có thể bị thối nâu khi bệnh lan mạnh"
+    ],
+    "treatment": [
+      "Nhổ bỏ ổ bệnh nặng, không để tàn dư bệnh tồn tại trên ruộng",
+      "Gợi ý hoạt chất: cymoxanil + mancozeb, metalaxyl-M + mancozeb, mandipropamid, cyazofamid hoặc hoạt chất chuyên trị sương mai đã đăng ký cho khoai tây",
+      "Phun rất sớm theo dự báo thời tiết ẩm lạnh, luân phiên hoạt chất để tránh kháng"
+    ],
+    "care": [
+      "Lên luống cao, thoát nước nhanh sau mưa",
+      "Không tưới phun mưa khi có nguy cơ bệnh",
+      "Thu hoạch lúc ruộng khô, loại bỏ củ bệnh",
+      "Luân canh và sử dụng giống sạch bệnh"
+    ],
+    "note": "Late blight phát triển rất nhanh trong thời tiết mát ẩm và có thể gây mất trắng nếu xử lý chậm."
+  },
+  "Potato___healthy": {
+    "title": "Khoai tây – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh dày, không có đốm vòng hay vết úng nước",
+      "Thân mập, bụi phát triển đều",
+      "Củ hình thành tốt, vỏ sạch bệnh"
+    ],
+    "treatment": [
+      "Không dùng thuốc khi ruộng chưa có triệu chứng",
+      "Ưu tiên kiểm tra ruộng sau mưa, chỉ xử lý khi có dấu hiệu đầu tiên hoặc cảnh báo sương mai",
+      "Có thể dùng chế phẩm sinh học hỗ trợ rễ/đất theo quy trình canh tác"
+    ],
+    "care": [
+      "Dùng giống sạch, lên luống cao và thoát nước tốt",
+      "Bón cân đối, tránh đạm quá cao",
+      "Phủ gốc hoặc quản lý cỏ để giảm bắn đất lên lá",
+      "Ghi nhật ký ruộng cho từng lần tưới, bón, phun"
+    ],
+    "note": "Khoai tây khỏe phụ thuộc lớn vào giống sạch bệnh và quản lý ẩm độ."
+  },
+  "Raspberry___healthy": {
+    "title": "Mâm xôi – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh sáng, mép lá nguyên, không đốm hay héo rũ",
+      "Cành khỏe, vươn đều, không có vết loét bất thường",
+      "Quả đậu tốt, màu sắc phát triển bình thường"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi cây không có triệu chứng",
+      "Ưu tiên phòng ngừa bằng vệ sinh vườn và thông thoáng luống",
+      "Chỉ dùng thuốc BVTV khi có dấu hiệu bệnh thật và đúng đăng ký"
+    ],
+    "care": [
+      "Tỉa cành già sau thu hoạch, giữ hàng cây thoáng",
+      "Tưới vừa đủ, tránh úng kéo dài ở vùng rễ",
+      "Phủ gốc hữu cơ và quản lý cỏ dại",
+      "Theo dõi thường xuyên lá gốc và quả chín"
+    ],
+    "note": "Mâm xôi dễ giảm sức nếu luống ẩm bí và tán quá dày."
+  },
+  "Soybean___healthy": {
+    "title": "Đậu tương – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh đều, không đốm cháy hay vàng gân bất thường",
+      "Cây đứng khỏe, đốt thân phát triển bình thường",
+      "Quả đậu đồng đều, ít rụng hoa quả non"
+    ],
+    "treatment": [
+      "Không cần dùng thuốc khi ruộng khỏe",
+      "Chỉ xử lý thuốc khi phát hiện sâu bệnh vượt ngưỡng kinh tế hoặc có cảnh báo địa phương",
+      "Có thể ưu tiên chế phẩm sinh học và quản lý hại tổng hợp"
+    ],
+    "care": [
+      "Gieo đúng mật độ, thoát nước tốt và luân canh hợp lý",
+      "Bổ sung dinh dưỡng cân đối, chú ý lân – kali",
+      "Làm cỏ sớm, tránh cạnh tranh dinh dưỡng",
+      "Ghi chép nhật ký vật tư và kiểm tra đồng ruộng định kỳ"
+    ],
+    "note": "Đậu tương khỏe thường ít phát sinh bệnh lá nặng nếu ruộng thông thoáng và thoát nước tốt."
+  },
+  "Squash___Powdery_mildew": {
+    "title": "Bí – bệnh phấn trắng (Powdery mildew)",
+    "symptoms": [
+      "Lá có đám phấn trắng như bột ở mặt trên, sau lan rộng",
+      "Lá già vàng nhanh, khô sớm làm giảm nuôi quả",
+      "Dây yếu, quả nhỏ hoặc giảm độ ngọt/chất lượng"
+    ],
+    "treatment": [
+      "Cắt bỏ lá già bệnh nặng để giảm nguồn nấm",
+      "Gợi ý hoạt chất: sulfur, potassium bicarbonate, myclobutanil, difenoconazole hoặc chế phẩm sinh học phù hợp đã đăng ký cho bí và phấn trắng",
+      "Phun sớm khi mới chớm bệnh, phủ đều hai mặt lá"
+    ],
+    "care": [
+      "Trồng mật độ vừa phải, làm giàn hoặc định hướng dây để ruộng thông thoáng",
+      "Tưới gốc, không tưới ướt lá vào chiều tối",
+      "Bón cân đối, tránh bón thừa đạm",
+      "Thu gom lá bệnh và tàn dư sau vụ"
+    ],
+    "note": "Phấn trắng rất phổ biến trên cây họ bầu bí khi ruộng rậm và độ ẩm không khí cao."
+  },
+  "Strawberry___Leaf_scorch": {
+    "title": "Dâu tây – bệnh cháy lá (Leaf scorch)",
+    "symptoms": [
+      "Lá có nhiều đốm tím nâu nhỏ, sau liên kết làm mép lá cháy khô",
+      "Phiến lá cong nhẹ, giảm diện tích quang hợp",
+      "Cây yếu, ra hoa kết quả kém nếu bệnh kéo dài"
+    ],
+    "treatment": [
+      "Tỉa bỏ lá bệnh nặng, nhất là lá già sát gốc",
+      "Gợi ý hoạt chất: thuốc gốc đồng, captan, azoxystrobin hoặc chế phẩm sinh học phù hợp nếu đã đăng ký cho dâu tây và nhóm bệnh cháy/đốm lá",
+      "Phun phòng sau mưa ẩm kéo dài, tránh phun sát kỳ thu hái"
+    ],
+    "care": [
+      "Trồng trên luống cao, phủ màng hoặc vật liệu phủ để hạn chế bắn đất",
+      "Tưới nhỏ giọt, không làm ướt tán kéo dài",
+      "Tỉa lá già và quả hỏng thường xuyên",
+      "Đảm bảo nhà màng/luống thông thoáng, sạch cỏ"
+    ],
+    "note": "Bệnh tăng mạnh khi luống ẩm, lá già nhiều và thông khí kém."
+  },
+  "Strawberry___healthy": {
+    "title": "Dâu tây – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh dày, không đốm cháy hay khô mép",
+      "Cây ra hoa đậu quả đều, quả sáng và sạch",
+      "Cổ rễ chắc, không có dấu hiệu thối hoặc héo"
+    ],
+    "treatment": [
+      "Không cần thuốc trị bệnh khi cây khỏe",
+      "Ưu tiên biện pháp vệ sinh, tỉa lá già và kiểm soát ẩm độ",
+      "Chỉ xử lý thuốc khi phát hiện bệnh hoặc điều kiện thời tiết rủi ro cao"
+    ],
+    "care": [
+      "Tưới nhỏ giọt, phủ luống và giữ quả không chạm đất",
+      "Bón cân đối, tăng canxi – kali giai đoạn nuôi quả",
+      "Thu hái thường xuyên, loại quả hỏng ra khỏi luống",
+      "Ghi chép nhật ký từng lô để truy xuất"
+    ],
+    "note": "Dâu tây khỏe phụ thuộc nhiều vào quản lý ẩm và vệ sinh luống."
+  },
+  "Tomato___Bacterial_spot": {
+    "title": "Cà chua – bệnh đốm vi khuẩn (Bacterial spot)",
+    "symptoms": [
+      "Lá có đốm nhỏ sẫm màu, đôi khi viền vàng, có thể thủng lá",
+      "Quả có đốm sần nhỏ, xù xì và giảm giá trị thương phẩm",
+      "Cây giảm đậu quả, tán thưa do rụng lá"
+    ],
+    "treatment": [
+      "Loại bỏ lá và cây bệnh nặng, vệ sinh tàn dư triệt để",
+      "Gợi ý hoạt chất: thuốc gốc đồng, hỗn hợp đồng phù hợp, hoặc chế phẩm sinh học Bacillus spp. đã đăng ký cho cà chua và bệnh vi khuẩn",
+      "Kết hợp quản lý hạt/giống sạch bệnh và không phun lặp kéo dài một hoạt chất"
+    ],
+    "care": [
+      "Tưới nhỏ giọt, tránh nước bắn lên lá",
+      "Luân canh với cây không cùng họ cà",
+      "Buộc cây, tỉa lá gốc để tán luôn thông thoáng",
+      "Không thao tác khi lá ướt để hạn chế lây lan cơ học"
+    ],
+    "note": "Bệnh thường bùng phát mạnh sau mưa lớn, gió mạnh và thao tác trên cây ướt."
+  },
+  "Tomato___Early_blight": {
+    "title": "Cà chua – bệnh cháy lá sớm (Early blight)",
+    "symptoms": [
+      "Lá già có đốm nâu tròn với vòng đồng tâm rõ",
+      "Vết bệnh lan rộng làm lá vàng rồi cháy từ dưới lên",
+      "Thân và cuống quả có thể có vết thâm kéo dài"
+    ],
+    "treatment": [
+      "Tỉa bỏ lá gốc bị bệnh, không để lá chạm đất",
+      "Gợi ý hoạt chất: chlorothalonil, mancozeb, azoxystrobin, difenoconazole hoặc hỗn hợp đã đăng ký cho cà chua và cháy lá sớm",
+      "Luân phiên hoạt chất và xử lý sớm ngay khi có đốm đầu tiên"
+    ],
+    "care": [
+      "Phủ gốc để hạn chế đất bắn lên lá",
+      "Tưới gốc, tránh ướt lá kéo dài",
+      "Luân canh và vệ sinh cọc, dây buộc sau vụ",
+      "Bón cân đối, tăng kali và canxi"
+    ],
+    "note": "Bệnh thường khởi phát ở lá già gần mặt đất trong điều kiện ẩm nóng."
+  },
+  "Tomato___Late_blight": {
+    "title": "Cà chua – bệnh sương mai / cháy lá muộn (Late blight)",
+    "symptoms": [
+      "Lá có vết úng xanh xám, nhanh chuyển nâu đen",
+      "Mặt dưới lá có mốc trắng ở rìa vết khi ẩm cao",
+      "Thân, quả có thể bị thâm cứng và thối nhanh"
+    ],
+    "treatment": [
+      "Nhổ bỏ ổ bệnh nặng, không để tàn dư tồn tại trong ruộng",
+      "Gợi ý hoạt chất: cymoxanil + mancozeb, metalaxyl-M + mancozeb, mandipropamid, cyazofamid hoặc hoạt chất chuyên trị sương mai đã đăng ký cho cà chua",
+      "Phun sớm theo dự báo thời tiết mát ẩm, luân phiên cơ chế tác động"
+    ],
+    "care": [
+      "Làm luống cao, thoát nước nhanh",
+      "Không tưới phun mưa lên tán khi có nguy cơ bệnh",
+      "Nhà màng cần tăng thông gió và giảm ngưng tụ nước",
+      "Thu hoạch, phân loại và loại bỏ quả nghi bệnh riêng"
+    ],
+    "note": "Đây là bệnh rất nguy hiểm trên cà chua, diễn biến nhanh trong thời tiết mát ẩm."
+  },
+  "Tomato___Leaf_Mold": {
+    "title": "Cà chua – bệnh mốc lá (Leaf mold)",
+    "symptoms": [
+      "Mặt trên lá có vùng vàng nhạt không đều",
+      "Mặt dưới tương ứng có lớp mốc màu ô-liu đến nâu xám",
+      "Lá già bị quăn, khô và rụng dần từ dưới lên"
+    ],
+    "treatment": [
+      "Tỉa lá gốc và lá bệnh để giảm ẩm trong tán",
+      "Gợi ý hoạt chất: chlorothalonil, azoxystrobin, difenoconazole hoặc chế phẩm sinh học phù hợp đã đăng ký cho cà chua và mốc lá",
+      "Phun đều mặt dưới lá vì đây là nơi mốc phát triển mạnh"
+    ],
+    "care": [
+      "Giảm ẩm nhà màng, tăng lưu thông không khí",
+      "Không để cây quá rậm; tỉa chồi nách đúng kỹ thuật",
+      "Tưới buổi sáng và tránh làm ướt lá kéo dài",
+      "Vệ sinh tàn dư, dây buộc, nhà trồng sau vụ"
+    ],
+    "note": "Bệnh rất hay gặp trong nhà màng kín, ẩm cao và thông khí kém."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "title": "Cà chua – bệnh đốm lá Septoria",
+    "symptoms": [
+      "Lá có nhiều đốm tròn nhỏ, tâm xám nhạt và viền nâu sẫm",
+      "Trên vết bệnh thường có chấm đen li ti",
+      "Lá dưới vàng rồi rụng hàng loạt khi bệnh nặng"
+    ],
+    "treatment": [
+      "Tỉa lá bệnh sát gốc và tiêu huỷ ngoài ruộng",
+      "Gợi ý hoạt chất: chlorothalonil, mancozeb, copper compounds hoặc azoxystrobin nếu đã đăng ký đúng cây và bệnh",
+      "Phun sớm, tập trung bảo vệ bộ lá còn xanh ở tầng trên"
+    ],
+    "care": [
+      "Phủ gốc để tránh bắn đất chứa bào tử lên lá",
+      "Tưới gốc thay vì tưới phun",
+      "Luân canh, vệ sinh cọc/dụng cụ sau vụ",
+      "Trồng mật độ hợp lý để tán nhanh khô sau mưa"
+    ],
+    "note": "Septoria thường bắt đầu từ lá thấp và tăng mạnh khi mưa nhiều."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "title": "Cà chua – nhện đỏ hai chấm (Two-spotted spider mite)",
+    "symptoms": [
+      "Lá có nhiều chấm vàng li ti, sau bạc màu hoặc đồng bronzing",
+      "Mặt dưới lá có nhện rất nhỏ và tơ mịn",
+      "Lá khô sớm, cây giảm quang hợp và quả nhỏ"
+    ],
+    "treatment": [
+      "Cắt bỏ lá bị hại nặng và rửa giảm mật độ ở giai đoạn đầu nếu điều kiện cho phép",
+      "Gợi ý hoạt chất: abamectin, bifenazate, spiromesifen hoặc dầu khoáng/chế phẩm sinh học đã đăng ký cho cà chua và nhện đỏ",
+      "Luân phiên hoạt chất khác cơ chế, phun kỹ mặt dưới lá"
+    ],
+    "care": [
+      "Giữ ẩm đất ổn định, giảm stress khô nóng cho cây",
+      "Hạn chế lạm dụng thuốc phổ rộng làm chết thiên địch",
+      "Theo dõi mặt dưới lá định kỳ, nhất là mùa nắng nóng",
+      "Vệ sinh cỏ dại và cây ký chủ phụ quanh ruộng"
+    ],
+    "note": "Nhện đỏ bộc phát mạnh khi thời tiết khô nóng và ruộng bị stress."
+  },
+  "Tomato___Target_Spot": {
+    "title": "Cà chua – bệnh đốm bia / Target spot",
+    "symptoms": [
+      "Lá có đốm nâu tròn với vòng đồng tâm tương đối rõ",
+      "Vết bệnh có thể lớn hơn Septoria và gây cháy lá nhanh",
+      "Quả đôi khi có đốm lõm nâu gần cuống"
+    ],
+    "treatment": [
+      "Tỉa lá bệnh và tăng thông thoáng tán",
+      "Gợi ý hoạt chất: chlorothalonil, azoxystrobin, difenoconazole hoặc hỗn hợp triazole/strobilurin đã đăng ký cho cà chua và đốm bia",
+      "Phun sớm khi bệnh mới xuất hiện, tránh để lan lên tầng lá trên"
+    ],
+    "care": [
+      "Tưới gốc, phủ gốc và hạn chế nước bắn đất",
+      "Buộc cây, tỉa lá chân và chồi nách hợp lý",
+      "Luân canh với cây không cùng họ cà",
+      "Bón cân đối để cây không suy yếu kéo dài"
+    ],
+    "note": "Target spot thường nặng ở vườn ẩm nóng, tán rậm và thông khí yếu."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "title": "Cà chua – virus xoăn vàng lá (Tomato Yellow Leaf Curl Virus)",
+    "symptoms": [
+      "Lá non vàng, xoăn lên, dày cứng và biến dạng",
+      "Cây lùn, đốt ngắn, ra hoa kém hoặc rụng hoa",
+      "Quả ít, nhỏ và năng suất giảm mạnh"
+    ],
+    "treatment": [
+      "Không có thuốc trị khỏi virus; cần nhổ bỏ cây bệnh sớm để giảm nguồn lây",
+      "Quản lý bọ phấn trắng – môi giới truyền bệnh – bằng lưới chắn, bẫy vàng, phủ phản quang, dầu khoáng/chế phẩm phù hợp và thuốc đã đăng ký cho bọ phấn trên cà chua",
+      "Dùng giống/nguồn cây con sạch bệnh và khu ươm có lưới chắn côn trùng"
+    ],
+    "care": [
+      "Không trồng liên tục họ cà ở cùng khu vực nếu áp lực bệnh cao",
+      "Nhổ bỏ cây ký chủ phụ, cỏ dại quanh ruộng",
+      "Che lưới giai đoạn cây con và sau trồng sớm nếu có điều kiện",
+      "Khử trùng tay, dụng cụ và loại bỏ cây bệnh ngay khi phát hiện"
+    ],
+    "note": "Trọng tâm quản lý là ngăn bọ phấn truyền virus và loại bỏ nguồn bệnh sớm."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "title": "Cà chua – virus khảm cà chua (Tomato mosaic virus)",
+    "symptoms": [
+      "Lá có mảng xanh đậm – xanh nhạt xen kẽ kiểu khảm",
+      "Lá hẹp, nhăn hoặc biến dạng; cây sinh trưởng chậm",
+      "Quả có thể nhỏ, méo hoặc chín không đều"
+    ],
+    "treatment": [
+      "Không có thuốc trị khỏi virus; nhổ bỏ cây bệnh nặng để cắt nguồn lây",
+      "Khử trùng dụng cụ, tay và vật tư tiếp xúc vì virus dễ lây cơ học",
+      "Dùng hạt giống sạch bệnh và loại bỏ tàn dư cây bệnh sau vụ"
+    ],
+    "care": [
+      "Không thao tác trên cây khi vừa hút thuốc lá hoặc tay bẩn vì có thể làm tăng lây nhiễm cơ học",
+      "Luân canh và vệ sinh nhà trồng, khay ươm, cọc dây",
+      "Kiểm soát cỏ dại và cây ký chủ phụ",
+      "Ươm cây con riêng biệt, chọn cây sạch triệu chứng trước khi trồng"
+    ],
+    "note": "Virus khảm lây cơ học rất mạnh; vệ sinh dụng cụ và cây giống sạch bệnh là yếu tố quyết định."
+  },
+  "Tomato___healthy": {
+    "title": "Cà chua – cây khỏe mạnh",
+    "symptoms": [
+      "Lá xanh đều, không đốm, không xoăn vàng hay mốc mặt dưới",
+      "Thân cứng, phát chồi – ra hoa – đậu quả ổn định",
+      "Quả lớn đều, vỏ sạch và màu phát triển bình thường"
+    ],
+    "treatment": [
+      "Không dùng thuốc khi cây khỏe và chưa có nguy cơ rõ ràng",
+      "Ưu tiên phòng ngừa bằng vệ sinh, thông thoáng, tưới hợp lý và theo dõi dịch hại",
+      "Chỉ dùng sản phẩm BVTV khi có triệu chứng hoặc cảnh báo dịch theo vùng"
+    ],
+    "care": [
+      "Buộc cây, tỉa chồi nách và lá gốc để tán thoáng",
+      "Tưới nhỏ giọt, phủ gốc và thoát nước tốt",
+      "Bón phân cân đối, chú ý canxi – kali trong giai đoạn nuôi quả",
+      "Ghi nhật ký đầy đủ cho từng lần bón phân, tưới và xử lý"
+    ],
+    "note": "Cà chua khỏe vẫn cần theo dõi sát vì nhóm bệnh lá có thể bùng rất nhanh sau mưa ẩm."
   }
 }

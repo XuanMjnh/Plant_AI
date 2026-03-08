@@ -64,6 +64,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             )
                 .toList(),
             symptoms: advice?.symptoms ?? const [],
+            treatment: advice?.treatment ?? const [],
             care: advice?.care ?? const [],
             note: advice?.note,
           ),

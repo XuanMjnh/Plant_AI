@@ -33,6 +33,7 @@ class DiagnosisHistoryItem {
   final String? imagePath;
   final List<HistoryPrediction> predictions;
   final List<String> symptoms;
+  final List<String> treatment;
   final List<String> care;
   final String? note;
 
@@ -44,6 +45,7 @@ class DiagnosisHistoryItem {
     this.imagePath,
     this.predictions = const [],
     this.symptoms = const [],
+    this.treatment = const [],
     this.care = const [],
     this.note,
   });
@@ -57,6 +59,7 @@ class DiagnosisHistoryItem {
       'imagePath': imagePath,
       'predictions': predictions.map((e) => e.toJson()).toList(),
       'symptoms': symptoms,
+      'treatment': treatment,
       'care': care,
       'note': note,
     };
@@ -65,6 +68,7 @@ class DiagnosisHistoryItem {
   factory DiagnosisHistoryItem.fromJson(Map<String, dynamic> json) {
     final rawPredictions = json['predictions'];
     final rawSymptoms = json['symptoms'];
+    final rawTreatment = json['treatment'];
     final rawCare = json['care'];
 
     return DiagnosisHistoryItem(
@@ -86,6 +90,9 @@ class DiagnosisHistoryItem {
           : const [],
       symptoms: rawSymptoms is List
           ? rawSymptoms.map((e) => e.toString()).toList()
+          : const [],
+      treatment: rawTreatment is List
+          ? rawTreatment.map((e) => e.toString()).toList()
           : const [],
       care: rawCare is List
           ? rawCare.map((e) => e.toString()).toList()

@@ -139,7 +139,17 @@ class ResultScreen extends StatelessWidget {
             ...advice!.symptoms.map((s) => Text('• $s')),
             const SizedBox(height: 12),
             const Text(
-              'Gợi ý xử lý / chăm sóc:',
+              'Gợi ý xử lý (nên làm ngay):',
+              style: TextStyle(fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 6),
+            if (advice!.treatment.isEmpty)
+              const Text('Chưa có dữ liệu xử lý.')
+            else
+              ...advice!.treatment.map((t) => Text('• $t')),
+            const SizedBox(height: 12),
+            const Text(
+              'Gợi ý chăm sóc & phòng ngừa:',
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 6),

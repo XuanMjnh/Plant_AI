@@ -150,7 +150,25 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   const SizedBox(height: 16),
                   const Text(
-                    'Gợi ý xử lý / chăm sóc',
+                    'Gợi ý xử lý (nên làm ngay)',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  if (advice.treatment.isEmpty)
+                    const Text('Chưa có dữ liệu.')
+                  else
+                    ...advice.treatment.map(
+                          (t) => Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text('• $t'),
+                      ),
+                    ),
+                  const SizedBox(height: 16),
+                  const Text(
+                    'Gợi ý chăm sóc & phòng ngừa',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16,

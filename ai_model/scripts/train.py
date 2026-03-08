@@ -1,13 +1,3 @@
-"""
-Train tối ưu cho nhận diện bệnh lá cây.
-
-Điểm khác với bản cũ:
-- Mặc định dùng EfficientNetB0 transfer learning.
-- Train 2 giai đoạn: freeze -> fine-tune.
-- Có class weights nếu dữ liệu lệch lớp.
-- Có metadata để Flutter/TFLite giữ đúng preprocess.
-"""
-
 from __future__ import annotations
 import sys
 import argparse

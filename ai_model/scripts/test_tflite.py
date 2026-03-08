@@ -15,7 +15,7 @@ def load_labels(path: Path) -> List[str]:
 
 def preprocess(image_path: Path, size: int) -> np.ndarray:
     img = Image.open(image_path).convert("RGB")
-    # Gần giống crop_to_aspect_ratio=True khi train.
+
     img = ImageOps.fit(img, (size, size), method=Image.Resampling.BILINEAR)
     arr = np.asarray(img).astype(np.float32)
     arr = np.expand_dims(arr, axis=0)
