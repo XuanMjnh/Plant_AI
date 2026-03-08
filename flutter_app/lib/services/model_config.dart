@@ -4,15 +4,10 @@ import 'package:flutter/services.dart';
 class ModelConfig {
   final int inputWidth;
   final int inputHeight;
-
-  /// Hiện tại model simple_cnn đã có Rescaling(1/255) bên trong model,
-  /// nên Flutter không tự normalize bằng mean/std nữa.
-  ///
-  /// 2 trường này được giữ lại để sau này dễ đổi sang model khác.
   final double mean;
   final double std;
 
-  /// Số lượng kết quả top-K hiển thị ra UI
+// Số lượng kết quả hiển thị ra UI
   final int topK;
 
   const ModelConfig({

@@ -10,10 +10,13 @@ import 'model_config.dart';
 
 class Classifier {
   Interpreter? _interpreter;
-  late List<String> _labels;
+  List<String> _labels = [];
   late ModelConfig _config;
 
   bool get isLoaded => _interpreter != null;
+
+  // Getter public để HomeScreen đọc danh sách labels
+  List<String> get labels => List.unmodifiable(_labels);
 
   Future<void> load({
     String modelAssetPath = 'assets/models/model.tflite',
@@ -22,6 +25,7 @@ class Classifier {
   }) async {
     _config = config ?? ModelConfig.defaults();
 
+    // Load labels
     final labelsRaw = await rootBundle.loadString(labelsAssetPath);
     _labels = labelsRaw
         .split('\n')
@@ -31,12 +35,13 @@ class Classifier {
 
     try {
       final options = InterpreterOptions()..threads = 2;
-      _interpreter = await Interpreter.fromAsset(modelAssetPath, options: options);
+      _interpreter =
+      await Interpreter.fromAsset(modelAssetPath, options: options);
 
       final inputTensor = _interpreter!.getInputTensor(0);
       final outputTensor = _interpreter!.getOutputTensor(0);
 
-      final shape = inputTensor.shape; // [1, H, W, 3]
+      final shape = inputTensor.shape; // ví dụ: [1, H, W, 3]
       if (shape.length == 4) {
         _config = ModelConfig(
           inputWidth: shape[2],
@@ -47,17 +52,23 @@ class Classifier {
         );
       }
 
-      print('INPUT shape: ${inputTensor.shape}');
-      print('INPUT type : ${inputTensor.type}');
+      print('INPUT shape : ${inputTensor.shape}');
+      print('INPUT type  : ${inputTensor.type}');
       print('OUTPUT shape: ${outputTensor.shape}');
       print('OUTPUT type : ${outputTensor.type}');
       print('LABELS count: ${_labels.length}');
     } catch (e) {
+      print('Không load được model: $e');
       _interpreter = null;
     }
   }
 
   Future<List<Prediction>> predict(File imageFile) async {
+    if (_labels.isEmpty) {
+      throw Exception('Chưa load labels.');
+    }
+
+    // Nếu chưa có interpreter thì trả mock để test giao diện
     if (_interpreter == null) {
       return _mockPredict();
     }
@@ -78,6 +89,7 @@ class Classifier {
   List<List<List<List<double>>>> _preprocess(File imageFile) {
     final bytes = imageFile.readAsBytesSync();
     final decoded = img.decodeImage(bytes);
+
     if (decoded == null) {
       throw Exception('Không decode được ảnh.');
     }
@@ -116,6 +128,7 @@ class Classifier {
 
   List<Prediction> _topK(List<double> probs, int k) {
     final indexed = <int, double>{};
+
     for (var i = 0; i < probs.length; i++) {
       indexed[i] = probs[i];
     }
@@ -124,6 +137,7 @@ class Classifier {
       ..sort((a, b) => b.value.compareTo(a.value));
 
     final top = sorted.take(min(k, sorted.length)).toList();
+
     return top
         .map(
           (e) => Prediction(
@@ -135,11 +149,14 @@ class Classifier {
   }
 
   List<Prediction> _mockPredict() {
+    if (_labels.isEmpty) return [];
+
     final rng = Random();
     final n = min(_labels.length, 3);
     final picks = <Prediction>[];
 
     final indices = List.generate(_labels.length, (i) => i)..shuffle();
+
     for (var i = 0; i < n; i++) {
       picks.add(
         Prediction(
@@ -155,5 +172,6 @@ class Classifier {
 
   void close() {
     _interpreter?.close();
+    _interpreter = null;
   }
 }

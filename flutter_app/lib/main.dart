@@ -12,7 +12,8 @@ class PlantDiseaseAIApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Plant Disease AI (TFLite)',
+      debugShowCheckedModeBanner: false,
+      title: 'AI Chuẩn đoán bệnh trên cây trồng',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
