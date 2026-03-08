@@ -1,0 +1,31 @@
+{
+  "img_size": 224,
+  "architecture": "efficientnetb0",
+  "top_k": 5,
+  "class_names": [
+    "corn_Blight",
+    "corn_Common_Rust",
+    "corn_Gray_Leaf_Spot",
+    "corn_Healthy",
+    "mango_Anthracnose",
+    "mango_Bacterial Canker",
+    "mango_Cutting Weevil",
+    "mango_Die Back",
+    "mango_Gall Midge",
+    "mango_Healthy",
+    "mango_Powdery Mildew",
+    "mango_Sooty Mould",
+    "rice_bacterial_leaf_blight",
+    "rice_brown_spot",
+    "rice_healthy",
+    "rice_leaf_blast",
+    "rice_leaf_scald",
+    "rice_narrow_brown_spot"
+  ],
+  "preprocess": {
+    "input_range": "0_255_float",
+    "embedded_in_model": true,
+    "crop_to_aspect_ratio": true,
+    "inference_hint": "resize_center_crop_then_rgb"
+  }
+}

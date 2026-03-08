@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ---
 
 ```bash
-python -m scripts.train --data_dir dataset --img_size 224 --batch 32 --epochs 15
+python .\scripts\train.py --data_dir .\dataset --arch efficientnetb0 --img_size 224 --batch 32 --stage1_epochs 8 --stage2_epochs 12 --lr1 1e-3 --lr2 1e-5 --fine_tune_layers 40 --out_dir .\outputs
 ```
 
 - `outputs/model.keras` (mô hình Keras)
@@ -22,7 +22,7 @@ python -m scripts.train --data_dir dataset --img_size 224 --batch 32 --epochs 15
 Convert sang TFLite
 
 ```bash
-python scripts/convert_tflite.py --keras_path outputs/model.keras --out_tflite outputs/model.tflite
+python .\scripts\convert_tflite.py --keras_path .\outputs\model.keras --out_tflite .\outputs\model.tflite --quant float16
 ```
 
 - `outputs/model.tflite` -> `flutter_app/assets/models/model.tflite`
@@ -33,7 +33,7 @@ python scripts/convert_tflite.py --keras_path outputs/model.keras --out_tflite o
 ## 5) Test nhanh model TFLite (trên PC)
 
 ```bash
-python scripts/test_tflite.py --tflite outputs/model.tflite --labels outputs/labels.txt --image ../test.jpg
+python .\scripts\test_tflite.py --tflite .\outputs\model.tflite --labels .\outputs\labels.txt --image .\test.jpg
 ```
 
 ---
