@@ -12,8 +12,6 @@ class Classifier {
   Interpreter? _interpreter;
   List<String> _labels = [];
   late ModelConfig _config;
-  Tensor? _inputTensor;
-  Tensor? _outputTensor;
 
   bool get isLoaded => _interpreter != null;
   List<String> get labels => List.unmodifiable(_labels);
@@ -36,12 +34,15 @@ class Classifier {
 
     try {
       final options = InterpreterOptions()..threads = 2;
-      _interpreter = await Interpreter.fromAsset(modelAssetPath, options: options);
+      _interpreter = await Interpreter.fromAsset(
+        modelAssetPath,
+        options: options,
+      );
 
-      _inputTensor = _interpreter!.getInputTensor(0);
-      _outputTensor = _interpreter!.getOutputTensor(0);
+      final inputTensor = _interpreter!.getInputTensor(0);
+      final outputTensor = _interpreter!.getOutputTensor(0);
 
-      final inputShape = _inputTensor!.shape; // [1, H, W, 3]
+      final inputShape = inputTensor.shape; // [1, H, W, 3]
       if (inputShape.length == 4) {
         _config = _config.copyWith(
           inputWidth: inputShape[2],
@@ -49,28 +50,32 @@ class Classifier {
         );
       }
 
-      final outputShape = _outputTensor!.shape;
-      final numClasses = outputShape.isNotEmpty ? outputShape.last : _labels.length;
+      final outputShape = outputTensor.shape;
+      final numClasses =
+      outputShape.isNotEmpty ? outputShape.last : _labels.length;
+
       if (_labels.length != numClasses) {
         print(
           'Cảnh báo: labels=${_labels.length} nhưng output classes=$numClasses. '
-          'Sẽ dùng output của model làm chuẩn.',
+              'Sẽ dùng output của model làm chuẩn.',
         );
       }
 
-      print('INPUT shape : ${_inputTensor!.shape}');
-      print('INPUT type  : ${_inputTensor!.type}');
-      print('INPUT q     : scale=${_safeScale(_inputTensor!)} zp=${_safeZeroPoint(_inputTensor!)}');
-      print('OUTPUT shape: ${_outputTensor!.shape}');
-      print('OUTPUT type : ${_outputTensor!.type}');
-      print('OUTPUT q    : scale=${_safeScale(_outputTensor!)} zp=${_safeZeroPoint(_outputTensor!)}');
+      print('INPUT shape : ${inputTensor.shape}');
+      print('INPUT type  : ${inputTensor.type}');
+      print(
+        'INPUT q     : scale=${_safeScale(inputTensor)} zp=${_safeZeroPoint(inputTensor)}',
+      );
+      print('OUTPUT shape: ${outputTensor.shape}');
+      print('OUTPUT type : ${outputTensor.type}');
+      print(
+        'OUTPUT q    : scale=${_safeScale(outputTensor)} zp=${_safeZeroPoint(outputTensor)}',
+      );
       print('LABELS count: ${_labels.length}');
       print('CONFIG      : ${_config.toJson()}');
     } catch (e) {
       print('Không load được model: $e');
       _interpreter = null;
-      _inputTensor = null;
-      _outputTensor = null;
       rethrow;
     }
   }
@@ -79,31 +84,35 @@ class Classifier {
     if (_labels.isEmpty) {
       throw Exception('Chưa load labels.');
     }
-    if (_interpreter == null || _inputTensor == null || _outputTensor == null) {
+    if (_interpreter == null) {
       throw Exception('Model chưa được load.');
     }
 
-    final input = _createInputBuffer(imageFile);
-    final output = _createOutputBuffer();
+    // Luôn lấy tensor mới ở mỗi lần predict, không cache Tensor object lâu dài.
+    final inputTensor = _interpreter!.getInputTensor(0);
+    final outputTensor = _interpreter!.getOutputTensor(0);
+
+    final input = _createInputBuffer(imageFile, inputTensor);
+    final output = _createOutputBuffer(outputTensor);
 
     _interpreter!.run(input, output);
 
-    final probs = _extractOutputScores(output);
+    final probs = _extractOutputScores(output, outputTensor);
     return _topK(probs, _config.topK);
   }
 
-  Object _createInputBuffer(File imageFile) {
+  Object _createInputBuffer(File imageFile, Tensor inputTensor) {
     final image = _decodeAndPrepareImage(imageFile);
-    final inputType = _inputTensor!.type.toString();
+    final typeName = _tensorTypeName(inputTensor.type);
 
-    if (inputType.contains('float32')) {
+    if (typeName == 'float32') {
       return List.generate(
         1,
-        (_) => List.generate(
+            (_) => List.generate(
           _config.inputHeight,
-          (y) => List.generate(
+              (y) => List.generate(
             _config.inputWidth,
-            (x) {
+                (x) {
               final pixel = image.getPixel(x, y);
               return <double>[
                 _normalizeFloat(pixel.r.toDouble()),
@@ -116,19 +125,19 @@ class Classifier {
       );
     }
 
-    if (inputType.contains('uint8') || inputType.contains('int8')) {
+    if (typeName == 'uint8' || typeName == 'int8') {
       return List.generate(
         1,
-        (_) => List.generate(
+            (_) => List.generate(
           _config.inputHeight,
-          (y) => List.generate(
+              (y) => List.generate(
             _config.inputWidth,
-            (x) {
+                (x) {
               final pixel = image.getPixel(x, y);
               return <int>[
-                _quantizeInputValue(pixel.r.toDouble()),
-                _quantizeInputValue(pixel.g.toDouble()),
-                _quantizeInputValue(pixel.b.toDouble()),
+                _quantizeInputValue(pixel.r.toDouble(), inputTensor),
+                _quantizeInputValue(pixel.g.toDouble(), inputTensor),
+                _quantizeInputValue(pixel.b.toDouble(), inputTensor),
               ];
             },
           ),
@@ -136,7 +145,9 @@ class Classifier {
       );
     }
 
-    throw UnsupportedError('Kiểu input tensor chưa hỗ trợ: ${_inputTensor!.type}');
+    throw UnsupportedError(
+      'Kiểu input tensor chưa hỗ trợ: ${inputTensor.type}',
+    );
   }
 
   img.Image _decodeAndPrepareImage(File imageFile) {
@@ -199,49 +210,54 @@ class Classifier {
     }
   }
 
-  int _quantizeInputValue(double pixel) {
+  int _quantizeInputValue(double pixel, Tensor inputTensor) {
     final normalized = _normalizeFloat(pixel);
-    final scale = _safeScale(_inputTensor!);
-    final zeroPoint = _safeZeroPoint(_inputTensor!);
+    final scale = _safeScale(inputTensor);
+    final zeroPoint = _safeZeroPoint(inputTensor);
+    final typeName = _tensorTypeName(inputTensor.type);
 
     if (scale == 0) {
       return normalized.round();
     }
 
     final raw = (normalized / scale) + zeroPoint;
-    final inputType = _inputTensor!.type.toString();
 
-    if (inputType.contains('uint8')) {
+    if (typeName == 'uint8') {
       return raw.round().clamp(0, 255).toInt();
     }
 
-    if (inputType.contains('int8')) {
+    if (typeName == 'int8') {
       return raw.round().clamp(-128, 127).toInt();
     }
 
     return raw.round();
   }
 
-  Object _createOutputBuffer() {
-    final outputShape = _outputTensor!.shape;
+  Object _createOutputBuffer(Tensor outputTensor) {
+    final outputShape = outputTensor.shape;
     final batch = outputShape.isNotEmpty ? outputShape.first : 1;
-    final numClasses = outputShape.isNotEmpty ? outputShape.last : _labels.length;
-    final outputType = _outputTensor!.type.toString();
+    final numClasses =
+    outputShape.isNotEmpty ? outputShape.last : _labels.length;
+    final typeName = _tensorTypeName(outputTensor.type);
 
-    if (outputType.contains('float32')) {
+    if (typeName == 'float32') {
       return List.generate(batch, (_) => List<double>.filled(numClasses, 0.0));
     }
 
-    if (outputType.contains('uint8') || outputType.contains('int8')) {
+    if (typeName == 'uint8' || typeName == 'int8') {
       return List.generate(batch, (_) => List<int>.filled(numClasses, 0));
     }
 
-    throw UnsupportedError('Kiểu output tensor chưa hỗ trợ: ${_outputTensor!.type}');
+    throw UnsupportedError(
+      'Kiểu output tensor chưa hỗ trợ: ${outputTensor.type}',
+    );
   }
 
-  List<double> _extractOutputScores(Object output) {
+  List<double> _extractOutputScores(Object output, Tensor outputTensor) {
     if (output is! List || output.isEmpty || output.first is! List) {
-      throw StateError('Không đọc được output từ model. Kiểu thực tế: ${output.runtimeType}');
+      throw StateError(
+        'Không đọc được output từ model. Kiểu thực tế: ${output.runtimeType}',
+      );
     }
 
     final firstRow = List<dynamic>.from(output.first as List);
@@ -251,15 +267,32 @@ class Classifier {
 
     if (firstRow.first is int) {
       final values = firstRow.map((e) => e as int).toList();
-      final scale = _safeScale(_outputTensor!);
-      final zeroPoint = _safeZeroPoint(_outputTensor!);
+      final scale = _safeScale(outputTensor);
+      final zeroPoint = _safeZeroPoint(outputTensor);
+
       if (scale == 0) {
         return values.map((e) => e.toDouble()).toList();
       }
+
       return values.map((e) => (e - zeroPoint) * scale).toList();
     }
 
     return firstRow.map((e) => (e as num).toDouble()).toList();
+  }
+
+  String _tensorTypeName(Object tensorType) {
+    // Ưu tiên enum.name nếu package hiện tại hỗ trợ.
+    try {
+      final dynamic t = tensorType;
+      final name = t.name;
+      if (name is String && name.isNotEmpty) {
+        return name.toLowerCase();
+      }
+    } catch (_) {}
+
+    // Fallback cho các version cũ hơn.
+    final raw = tensorType.toString().toLowerCase();
+    return raw.contains('.') ? raw.split('.').last : raw;
   }
 
   double _safeScale(Tensor tensor) {
@@ -293,17 +326,15 @@ class Classifier {
     return top
         .map(
           (e) => Prediction(
-            label: e.key < _labels.length ? _labels[e.key] : 'Class_${e.key}',
-            confidence: e.value,
-          ),
-        )
+        label: e.key < _labels.length ? _labels[e.key] : 'Class_${e.key}',
+        confidence: e.value,
+      ),
+    )
         .toList();
   }
 
   void close() {
     _interpreter?.close();
     _interpreter = null;
-    _inputTensor = null;
-    _outputTensor = null;
   }
 }
